@@ -35,6 +35,9 @@
                         <li><a href="{{ .href | relLangURL }}/">{{ .title }}</a></li>
                     {{ end }}
 
+                    <!-- Manually add Side quests page link at the top -->
+                    <li><a href="{{ "/sidequests/" | relLangURL }}">Side Quests</a></li>
+                    
                     <!-- Search -->
                     <li><a href="{{ "search" | relURL }}"><i class="fa fa-search"></i></a></li>
                 </ul>

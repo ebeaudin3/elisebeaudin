@@ -1,0 +1,10 @@
+<h1>{{ .Title }}</h1>
+<p>{{ .Content }}</p>
+<div class="button-container">
+  {{ range .Params.buttons }} <!-- Changed to .Params.buttons -->
+  <a href="{{ .link }}" class="image-button">
+    <img src="{{ .image }}" alt="{{ .name }}">
+    <span>{{ .name }}</span>
+  </a>
+  {{ end }}
+</div>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sidequests on Élise Beaudin</title>
+    <link>http://localhost:1313/sidequests/</link>
+    <description>Recent content in Sidequests on Élise Beaudin</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/sidequests/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/sidequests/sidequests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sidequests/sidequests/</guid>
+      <description>About Me </description>
+    </item>
+  </channel>
+</rss>

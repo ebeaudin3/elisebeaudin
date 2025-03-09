@@ -64,5 +64,12 @@
       <guid>http://localhost:1313/archive/</guid>
       <description></description>
     </item>
+    <item>
+      <title>Side Quests</title>
+      <link>http://localhost:1313/sidequests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sidequests/</guid>
+      <description>You will find on this page some side projects that are either for fun, still work-in-progress.</description>
+    </item>
   </channel>
 </rss>

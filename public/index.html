@@ -22,9 +22,9 @@
     
 
     
-    <meta name="description" content="The Ocean through Science and Stories">
-    <meta property="og:description" content="The Ocean through Science and Stories" />
-    <meta property="twitter:description" content="The Ocean through Science and Stories" />
+    <meta name="description" content="the ocean through science and stories">
+    <meta property="og:description" content="the ocean through science and stories" />
+    <meta property="twitter:description" content="the ocean through science and stories" />
     
 
     
@@ -35,7 +35,7 @@
     <meta name="keyword"  content="Oceanography Adventures Storytelling">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Élise Beaudin</title>
+    <title>Élise Beaudin | Élise Beaudin</title>
 
     <link rel="canonical" href="/">
 
@@ -112,9 +112,10 @@
                     
 
                     
-                        <li><a href="/sidequests//">Side Quests</a></li>
-                    
 
+                    
+                    <li><a href="/sidequests/">Side Quests</a></li>
+                    
                     
                     <li><a href="/search"><i class="fa fa-search"></i></a></li>
                 </ul>
@@ -161,7 +162,7 @@
       <div class="row">
         <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
           <div class="site-heading">
-            <h1>The Ocean through Science and Stories</h1>
+            <h1>the ocean through science and stories</h1>
           </div>
         </div>
       </div>
@@ -174,31 +175,23 @@
       
       <div class="col-md-9">
         
-        <h1>Welcome aboard!</h1>
-        <p>Let&#39;s dive in together and let the ocean tell its story.</p>
-        <div class="button-container">
-          
-          <a href="/life-at-sea/" class="image-button">
-            <img src="/img/ship.jpg" alt="Life at Sea">
-            <span>Life at Sea</span>
-          </a>
-          
-          <a href="/content/posts/marineheatwaves.md" class="image-button">
-            <img src="/img/mhw.jpg" alt="Marine Heatwaves">
-            <span>Marine Heatwaves</span>
-          </a>
-          
-          <a href="/deeps-shorts/" class="image-button">
-            <img src="/img/science.jpg" alt="Life of a Scientist">
-            <span>Life of a Scientist</span>
-          </a>
-          
-          <a href="/xyozomes/" class="image-button">
-            <img src="/images/book.jpg" alt="The People and the Xyozomes">
-            <span>The People and the Xyozomes</span>
-          </a>
-          
-        </div>
+        
+        
+          <h1>Welcome aboard!</h1>
+<p>Let&#39;s dive in together and let the ocean tell her story.</p>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<h1>Latest posts</h1>
+
+
+
+
+
+
+        
+        
+        
+        
+        
         
         
   
@@ -206,10 +199,9 @@
 <div data-pagefind-ignore="all" class="container">
     <div class="row">
         
-        
    	    <div class="
-            col-lg-8 col-lg-offset-1
-            col-md-8 col-md-offset-1
+            col-lg-8 col-lg-offset-0
+            col-md-8 col-md-offset-0
             col-sm-12
             col-xs-12
             post-container
@@ -346,9 +338,10 @@
 	</div>
 </div>
 
- 
-      </div>
 
+        
+      </div>
+      
       
       <div>
         
@@ -598,57 +591,6 @@
 </script>
 
 
-
-<script type="text/javascript">
-    
-    var $zh = document.querySelector(".zh");
-    var $en = document.querySelector(".en");
-    var $select = document.querySelector("select");
-
-    
-    function getLang() { return new URLSearchParams(document.location.search).get("lang") }
-
-    function setLang(newLang) {
-        var params = new URLSearchParams(document.location.search)
-        params.set("lang", newLang)
-        document.location.search = params.toString()  
-    }
-
-    
-    function _render() {
-        var lang = getLang()
-        
-        if (lang == "zh") {
-            $select.selectedIndex = 0;
-            $zh.style.display = "block";
-            $zh.classList.add("active");
-            $en.style.display = "none";
-            $en.classList.remove("active");
-            
-        } else {
-            $select.selectedIndex = 1;
-            $en.style.display = "block";
-            $en.classList.add("active");
-            $zh.style.display = "none";
-            $zh.classList.remove("active");
-        }
-        
-        generateCatalog(".catalog-body");
-    }
-
-    
-    function onLanChange(index) {
-        if (index == 0) {
-            lang = "zh"
-        } else {
-            lang = "en"
-        }
-        setLang(lang)
-    }
-
-    
-    _render();
-</script>
 
 
 
