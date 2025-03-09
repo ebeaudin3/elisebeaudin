@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Élise Beaudin</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Élise Beaudin</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 05 Mar 2025 12:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DEEPS Cores</title>
+      <link>http://localhost:1313/2017/11/28/access-application-from-outside/</link>
+      <pubDate>Tue, 28 Nov 2017 12:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2017/11/28/access-application-from-outside/</guid>
+      <description>What Are Marine Heatwaves? Marine heatwaves are prolonged periods of warmer-than-usual temperatures at the surface of the ocean.&#xA;What Are Their Impacts On Marine Ecosystems? Fish and mammals can be impacted by a rise in temperature.&#xA;What Does The Future Hold? </description>
+    </item>
+    <item>
+      <title>Marine Heatwaves</title>
+      <link>http://localhost:1313/2017/11/28/access-application-from-outside/</link>
+      <pubDate>Tue, 28 Nov 2017 12:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2017/11/28/access-application-from-outside/</guid>
+      <description>What Are Marine Heatwaves? Marine heatwaves are prolonged periods of warmer-than-usual temperatures at the surface of the ocean.&#xA;What Are Their Impacts On Marine Ecosystems? Fish and mammals can be impacted by a rise in temperature.&#xA;What Does The Future Hold? </description>
+    </item>
+    <item>
+      <title>Submesoscale Ocean Dynamics Experiment</title>
+      <link>http://localhost:1313/2017/11/28/access-application-from-outside/</link>
+      <pubDate>Tue, 28 Nov 2017 12:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2017/11/28/access-application-from-outside/</guid>
+      <description>What Are Marine Heatwaves? Marine heatwaves are prolonged periods of warmer-than-usual temperatures at the surface of the ocean.&#xA;What Are Their Impacts On Marine Ecosystems? Fish and mammals can be impacted by a rise in temperature.&#xA;What Does The Future Hold? </description>
+    </item>
+    <item>
+      <title>U.S. West Coast Rainfall Could Be Linked To Surface Ocean Temperature </title>
+      <link>http://localhost:1313/2017/11/28/access-application-from-outside/</link>
+      <pubDate>Tue, 28 Nov 2017 12:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/2017/11/28/access-application-from-outside/</guid>
+      <description>What Are Marine Heatwaves? Marine heatwaves are prolonged periods of warmer-than-usual temperatures at the surface of the ocean.&#xA;What Are Their Impacts On Marine Ecosystems? Fish and mammals can be impacted by a rise in temperature.&#xA;What Does The Future Hold? </description>
+    </item>
+    <item>
+      <title>Welcome!</title>
+      <link>http://localhost:1313/post/readme/</link>
+      <pubDate>Wed, 05 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/readme/</guid>
+      <description>Introduction to my personal website blablabla</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>About Me Hi! My name is Élise Beaudin, I am a physical oceanographer, and a storyteller. I have a lot of sea-going experience and data analysis skills of anything ocean and climate data related. Throughout my career, I have lived and worked in several countries: Canada, Sweden, Germany, Italy and the USA. I love open source softwares and prog languages, playing music and filmmaking.&#xA;Feel free to connect with me via Linkedin, leave your thoughts in this blog or share your ideas by writing me an email.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/search/placeholder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/search/placeholder/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Posts Archive</title>
+      <link>http://localhost:1313/archive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/archive/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

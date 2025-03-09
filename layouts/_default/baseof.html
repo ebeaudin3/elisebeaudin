@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  {{ partial "head.html" . }}
+  {{ partial "nav.html" . }}
+
+  <!-- Page Header -->
+  {{ block "header" .}}
+  <header class="intro-header" style="background-image: url('{{ .Site.Params.header_image | relURL }}')">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+          <div class="site-heading">
+            <h1>{{ .Site.Params.description }}</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  {{ end }}
+
+  <div class="container">
+    <div class="row">
+      <!-- Main Content Area -->
+      <div class="col-md-9">
+        {{ if .IsHome }}
+        <h1>{{ .Site.Params.frontpage_title }}</h1>
+        <p>{{ .Site.Params.frontpage_description }}</p>
+        <div class="button-container">
+          {{ range .Site.Params.buttons }}
+          <a href="{{ .link }}" class="image-button">
+            <img src="{{ .image }}" alt="{{ .name }}">
+            <span>{{ .name }}</span>
+          </a>
+          {{ end }}
+        </div>
+        {{ end }}
+        {{ block "main" . }}{{ end }} <!-- Page-specific content -->
+      </div>
+
+      <!-- Sidebar Area -->
+      <div>
+        {{ partial "sidebar.html" . }} <!-- Sidebar for all pages -->
+      </div>
+    </div>
+  </div>
+
+  {{ partial "footer.html" . }}
+</body>
+</html>
