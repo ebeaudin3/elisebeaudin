@@ -7,7 +7,7 @@ buttons:
     link: "/life-at-sea/"
     image: "/img/ship.jpg"
     
-  - name: "Life of a Scientist"
+  - name: "DEEPS Shorts"
     link: "/deeps-shorts/"
     image: "/img/science.jpg"
     
