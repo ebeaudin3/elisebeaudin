@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Research on Élise Beaudin</title>
-    <link>https://elisebeaudin.com/categories/research/</link>
+    <link>http://localhost:1313/categories/research/</link>
     <description>Recent content in Research on Élise Beaudin</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 05 Mar 2025 12:00:00 +0000</lastBuildDate>
-    <atom:link href="https://elisebeaudin.com/categories/research/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/research/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Marine Heatwaves</title>
-      <link>https://elisebeaudin.com/2017/11/28/access-application-from-outside/</link>
+      <link>http://localhost:1313/2017/11/28/access-application-from-outside/</link>
       <pubDate>Tue, 28 Nov 2017 12:00:00 +0000</pubDate>
-      <guid>https://elisebeaudin.com/2017/11/28/access-application-from-outside/</guid>
+      <guid>http://localhost:1313/2017/11/28/access-application-from-outside/</guid>
       <description>What Are Marine Heatwaves? Marine heatwaves are prolonged periods of warmer-than-usual temperatures at the surface of the ocean.&#xA;What Are Their Impacts On Marine Ecosystems? Fish and mammals can be impacted by a rise in temperature.&#xA;What Does The Future Hold? </description>
     </item>
     <item>
       <title>Submesoscale Ocean Dynamics Experiment</title>
-      <link>https://elisebeaudin.com/2017/11/28/access-application-from-outside/</link>
+      <link>http://localhost:1313/2017/11/28/access-application-from-outside/</link>
       <pubDate>Tue, 28 Nov 2017 12:00:00 +0000</pubDate>
-      <guid>https://elisebeaudin.com/2017/11/28/access-application-from-outside/</guid>
+      <guid>http://localhost:1313/2017/11/28/access-application-from-outside/</guid>
       <description>What Are Marine Heatwaves? Marine heatwaves are prolonged periods of warmer-than-usual temperatures at the surface of the ocean.&#xA;What Are Their Impacts On Marine Ecosystems? Fish and mammals can be impacted by a rise in temperature.&#xA;What Does The Future Hold? </description>
     </item>
     <item>
       <title>U.S. West Coast Rainfall Could Be Linked To Surface Ocean Temperature </title>
-      <link>https://elisebeaudin.com/2017/11/28/access-application-from-outside/</link>
+      <link>http://localhost:1313/2017/11/28/access-application-from-outside/</link>
       <pubDate>Tue, 28 Nov 2017 12:00:00 +0000</pubDate>
-      <guid>https://elisebeaudin.com/2017/11/28/access-application-from-outside/</guid>
+      <guid>http://localhost:1313/2017/11/28/access-application-from-outside/</guid>
       <description>What Are Marine Heatwaves? Marine heatwaves are prolonged periods of warmer-than-usual temperatures at the surface of the ocean.&#xA;What Are Their Impacts On Marine Ecosystems? Fish and mammals can be impacted by a rise in temperature.&#xA;What Does The Future Hold? </description>
     </item>
   </channel>
