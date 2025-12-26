@@ -1,4 +1,4 @@
-baseURL = "http://elisebeaudin.com/"
+baseURL = "https://elisebeaudin.com/"
 relativeURLs = true
 canonifyURLs = false
 languageCode = "en-us"
