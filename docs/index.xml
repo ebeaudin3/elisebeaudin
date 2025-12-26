@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Élise Beaudin</title>
-    <link>http://example.org/</link>
+    <link>http://elisebeaudin.com/</link>
     <description>Recent content on Élise Beaudin</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://elisebeaudin.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About Me</title>
-      <link>http://example.org/aboutme/</link>
+      <link>http://elisebeaudin.com/aboutme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/aboutme/</guid>
+      <guid>http://elisebeaudin.com/aboutme/</guid>
       <description>Bonjour/Hi! My name is Élise Beaudin, I am a physical oceanographer, and a storyteller. I have a lot of sea-going experience, as well as data analysis skills of anything ocean and climate data related.&#xA;Throughout my life, I have lived and worked in several countries: Canada, Sweden, Germany, Italy, and the USA. I love programming, playing and composing music, filmmaking, and of course the ocean!&#xA;Feel free to connect with me via Linkedin, or contact me via email.</description>
     </item>
     <item>
       <title>Publications</title>
-      <link>http://example.org/publications/</link>
+      <link>http://elisebeaudin.com/publications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/publications/</guid>
+      <guid>http://elisebeaudin.com/publications/</guid>
       <description>Scientific publications 2025 [submitted]&#xA;Kohlman, Katie, S. Mogen, J. Cohen, N. S. Lovenduski, G. Bonino, É. Beaudin, J. Araujo, A. Gagliardi, “Biogeochemistry Impacts of the 2019 NE Pacific MHW”, submitted.&#xA;2023 Beaudin, É., E. Di Lorenzo, A. J. Miller, H. Seo, and Y. Joh., 2023, “Impact of Extratropical Northeast Pacific SST on U.S. West Coast Precipitation.” Geophysical Research Letters 50, no. 3, (doi:10.1029/2022GL102354)&#xA;2022 Beaudin, É., and Annalisa Bracco, 2022, “How Marine Heatwaves Impact Life in the Ocean.</description>
     </item>
     <item>
       <title>Research</title>
-      <link>http://example.org/research/</link>
+      <link>http://elisebeaudin.com/research/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/research/</guid>
+      <guid>http://elisebeaudin.com/research/</guid>
       <description></description>
     </item>
     <item>
       <title>Side Quests</title>
-      <link>http://example.org/sidequests/</link>
+      <link>http://elisebeaudin.com/sidequests/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/sidequests/</guid>
+      <guid>http://elisebeaudin.com/sidequests/</guid>
       <description></description>
     </item>
     <item>
       <title>Welcome</title>
-      <link>http://example.org/index_/</link>
+      <link>http://elisebeaudin.com/index_/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/index_/</guid>
+      <guid>http://elisebeaudin.com/index_/</guid>
       <description>Welcome to My Website &amp;lt;div class=&amp;quot;page-header&amp;quot; style=&amp;quot;position: relative;&amp;quot;&amp;gt; &amp;lt;img src=&amp;quot;{{ .Site.Params.header_image | relURL }}&amp;quot; alt=&amp;quot;Header&amp;quot; class=&amp;quot;header-image&amp;quot; style=&amp;quot;width: 100%; display: block;&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;header-text&amp;quot; style=&amp;quot; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; text-shadow: 0 2px 5px rgba(0,0,0,0.7); text-align: center; &amp;quot;&amp;gt; &amp;lt;h1&amp;gt;{{ .Site.Params.header_text }}&amp;lt;/h1&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; </description>
     </item>
   </channel>

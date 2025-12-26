@@ -1,4 +1,6 @@
-baseURL = "http://example.org/"
+baseURL = "http://elisebeaudin.com/"
+relativeURLs = true
+canonifyURLs = false
 languageCode = "en-us"
 theme = "hyde"
 title = "Élise Beaudin"

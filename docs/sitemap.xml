@@ -2,20 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/aboutme/</loc>
+    <loc>http://elisebeaudin.com/aboutme/</loc>
   </url><url>
-    <loc>http://example.org/categories/</loc>
+    <loc>http://elisebeaudin.com/categories/</loc>
   </url><url>
-    <loc>http://example.org/</loc>
+    <loc>http://elisebeaudin.com/</loc>
   </url><url>
-    <loc>http://example.org/publications/</loc>
+    <loc>http://elisebeaudin.com/publications/</loc>
   </url><url>
-    <loc>http://example.org/research/</loc>
+    <loc>http://elisebeaudin.com/research/</loc>
   </url><url>
-    <loc>http://example.org/sidequests/</loc>
+    <loc>http://elisebeaudin.com/sidequests/</loc>
   </url><url>
-    <loc>http://example.org/tags/</loc>
+    <loc>http://elisebeaudin.com/tags/</loc>
   </url><url>
-    <loc>http://example.org/index_/</loc>
+    <loc>http://elisebeaudin.com/index_/</loc>
   </url>
 </urlset>
