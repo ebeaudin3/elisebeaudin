@@ -1,0 +1,432 @@
+html {
+  font-family: Helvetica, Helvetica, Helvetica, serif;
+}
+@media (min-width: 48em) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (min-width: 58em) {
+  html {
+    font-size: 20px;
+  }
+}
+
+/* Header responsiveness */
+@media (max-width: 768px) {
+  .page-header {
+    height: 250px; /* Adjust for small screens */
+  }
+
+  .page-header h1 {
+    font-size: 2rem;
+    }
+
+  .page-header p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Header Section */
+.page-header {
+  background-size: cover;
+  background-position: center center;
+  height: 400px; /* Adjust height as per your design */
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top:    4rem;
+  padding-bottom: 4rem;
+  display: flex;
+  height: 100vh; /* entire viewport height */
+  position: relative;
+  width: calc(100% - 300px); /* Full width */
+  margin-left: 359px;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  overflow-x: hidden; /* Disable horizontal scrolling on the body */
+}
+
+.page-header .header-video {
+  width: 100%;
+  height: 105%;
+  object-fit: cover;
+  z-index: 2;
+  border-radius: 0px;
+}
+
+.page-header .text-overlay {
+  position: absolute;
+}
+
+.page-header h1 {
+  color: rgb(255,255,255,0.8);
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  font-size: 5rem;
+  z-index: 1;
+  padding: 10rem;
+  margin-left: -60px;
+}
+
+@media (max-width: 768px) {
+  /* Mobile Styles */
+  .page-header {
+    width: 100%; /* Full width on smaller screens */
+    margin-left: 0; /* Remove the margin so it's aligned properly */
+    padding: 0; /* Optional: remove padding if needed */
+  }
+  .page-header .header-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .page-header .text-overlay h1 {
+    font-size: 3rem;
+    color: rgb(255,255,255)
+  }
+}
+
+/* Content Section */
+.content {
+  max-width: 1200px;  /* or adjust based on your preference */
+  margin: 0 auto;  /* Center the content horizontally */
+  padding: 20px;  /* Add padding for spacing */
+}
+/* Fonts */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+/* Heading styles */
+h1 {
+  font-size: 3rem;  /* Large and prominent heading */
+  color: rgb(0,0,0)
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+/* Smaller text for captions or footer */
+small {
+  font-size: 0.875rem;
+}
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.2;
+}
+
+/* Optional: Apply a modern sans-serif for UI elements */
+.navbar, .sidebar, .footer {
+  font-family: 'Montserrat', sans-serif;
+}
+/* For buttons and links */
+button, a {
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+}
+
+/*
+ * Sidebar
+ *
+ * Flexible banner for housing site name, intro, and "footer" content. Starts
+ * out above content in mobile and later moves to the side with wider viewports.
+ */
+
+.sidebar {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: rgba(255,255,255,.5);
+  background-color: #202020;
+  z-index: 10;
+}
+@media (min-width: 48em) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 18rem;
+    text-align: left;
+  }
+  
+  .page-header {
+    position:relative;
+    width: 100vw;
+    height: 100vh;
+    overflow:hidden;
+    margin: 0;
+    padding: 0;
+  }
+  
+}
+
+/* Sidebar links */
+.sidebar a {
+  color: #fff;
+}
+
+/* About section */
+.sidebar-about h1 {
+  color: #fff;
+  margin-top: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 2.2rem;
+}
+
+/* Sidebar nav */
+.sidebar-nav {
+  padding-left: 0;
+  list-style: none;
+}
+.sidebar-nav-item {
+  display: block;
+}
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus {
+  text-decoration: underline;
+}
+.sidebar-nav-item.active {
+  font-weight: bold;
+}
+
+/* Responsive: horizontal layout on small screens */
+@media (max-width: 768px) {
+  .sidebar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem; /* spacing between links */
+  }
+
+  .sidebar-nav-item {
+    display: inline-block;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 768px) {
+  /* Hide the sidebar items by default */
+  .sidebar-nav {
+    display: none;
+    list-style: none;
+    padding-left: 0;
+    position: absolute;
+    top: 60px; /* Adjust based on your header */
+    left: 0;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Show the menu when the toggle is clicked */
+  .sidebar-nav.open {
+    display: block;
+  }
+
+  /* Style the hamburger button */
+  .sidebar-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+  }
+
+  /* Make sure the sidebar links are block-level on small screens */
+  .sidebar-nav-item {
+    display: block;
+    padding: 10px 0;
+  }
+}
+
+/* Sticky sidebar
+ *
+ * Add the `sidebar-sticky` class to the sidebar's container to affix it the
+ * contents to the bottom of the sidebar in tablets and up.
+ */
+
+@media (min-width: 48em) {
+  .sidebar-sticky {
+    position: absolute;
+    right:  1rem;
+    bottom: 1rem;
+    left:   1rem;
+  }
+}
+
+
+/* Container
+ *
+ * Align the contents of the site above the proper threshold with some margin-fu
+ * with a 25%-wide `.sidebar`.
+ */
+
+.content {
+  padding-top:    4rem;
+  padding-bottom: 4rem;
+}
+
+/* Media query for screens larger than 48em (576px) */
+@media (min-width: 48em) {
+  .content {
+    max-width: 38rem;
+    margin-left: 20rem;
+    margin-right: 2rem;
+  }
+}
+
+/* Media query for screens larger than 64em (768px) */
+@media (min-width: 64em) {
+  .content {
+    margin-left: 22rem;
+    margin-right: 4rem;
+  }
+}
+
+/* Research */
+.research-page {
+  gap: 6px; /* space between boxes */
+  padding: 2rem;
+  background: #f0f0f0; /* ensures thick black lines */
+  margin-left: 360px;
+}
+
+@media (max-width: 768px) {
+  .research-page {
+    margin-left: 0px;
+  }
+}
+
+.research-page h1 {
+  margin-top: 80px;
+}
+
+.research-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.research-image {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.research-text {
+  flex: 1;
+}
+
+/* Side Quests */
+.sq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 3 per row approx */
+  gap: 6px; /* space between boxes */
+  padding: 1rem;
+  background: #f0f0f0; /* ensures thick black lines */
+  margin-left: 360px;
+}
+
+@media (max-width: 768px) {
+  .sq-grid {
+    margin-left: 0px;
+  }
+}
+
+.sq-button {
+  background-color: white;
+  border: 8px solid white;
+  padding: 4rem 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  transition: transform 0.3s ease;
+  font-weight: bold;
+}
+
+.sq-button:hover {
+  transform: scale(1.03);
+  background-color: #f0f0f0;
+}
+
+
+/* Stories */
+
+.story-text {
+  font-family: 'Merriweather', serif; /* You can change this to any serif font you like */
+  font-size: 1.2rem; /* Adjust font size */
+  line-height: 1.6; /* Increase line height for readability */
+  letter-spacing: 0.5px; /* Slight letter spacing for a relaxed feel */
+  color: #333; /* Dark text color */
+  max-width: 800px; /* Limit the width for easy reading */
+  margin: 20px auto; /* Center the content and add margin */
+  padding: 20px;
+  text-align: justify; /* Justified text for book-like look */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* For headers to stand out */
+.story-text h1 {
+  font-family: 'Georgia', serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.author-credit {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 20px;
+  color: #888; /* Light gray for subtlety */
+}
+ 
+
+/*
+ * Reverse layout
+ *
+ * Flip the orientation of the page by placing the `.sidebar` on the right.
+ */
+
+@media (min-width: 48em) {
+  .layout-reverse .sidebar {
+    left: auto;
+    right: 0;
+  }
+  .layout-reverse .content {
+    margin-left: 2rem;
+    margin-right: 20rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .layout-reverse .content {
+    margin-left: 4rem;
+    margin-right: 22rem;
+  }
+}
+
+
+/* Dark Blue */
+.darkblue .sidebar {
+  background-color: #0D0D3C;
+}
+.theme-base-0g .content a,
+.theme-base-0g .related-posts li a:hover {
+  color: #0D0D3C;
+}
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Researches on Élise Beaudin</title>
+    <link>http://localhost:1313/research/</link>
+    <description>Recent content in Researches on Élise Beaudin</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/research/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Marine Heatwaves</title>
+      <link>http://localhost:1313/research/marine-heatwaves/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/marine-heatwaves/</guid>
+      <description>&lt;!-- Marine Heatwaves --&gt;&#xA;&lt;p&gt;Marine heatwaves (MHWs) are prolonged periods of anomalously high sea surface temperatures that persist for days to months and can span thousands of kilometers. They result from a combination of oceanic and atmospheric processes, including persistent anomalous low-pressure conditions, reduced vertical mixing, or anomalous heat advection.&#xA;&lt;br&gt; &lt;/br&gt;&#xA;MHWs significantly disrupt marine ecosystems, causing coral bleaching, shifts in ecosystem distributions, and sometimes fisheries collapses. As anthropogenic climate change increases background ocean temperatures, MHWs are becoming more frequent, intense, and longer-lasting, which raises concerns for ocean resilience and climate adaptation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Research</title>
+      <link>http://localhost:1313/research/index_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/index_/</guid>
+      <description>Marine Heatwaves Marine heatwaves (MHWs) are prolonged periods of anomalously high sea surface temperatures that persist for days to months and can span thousands of kilometers. They result from a combination of oceanic and atmospheric processes, including persistent anomalous low-pressure conditions, reduced vertical mixing, or anomalous heat advection. MHWs significantly disrupt marine ecosystems, causing coral bleaching, shifts in ecosystem distributions, and sometimes fisheries collapses. As anthropogenic climate change increases background ocean temperatures, MHWs are becoming more frequent, intense, and longer-lasting, which raises concerns for ocean resilience and climate adaptation.</description>
+    </item>
+    <item>
+      <title>Research</title>
+      <link>http://localhost:1313/research/old-version-of-index/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/old-version-of-index/</guid>
+      <description>Marine Heatwaves Marine heatwaves (MHWs) are prolonged periods of anomalously high sea surface temperatures that persist for days to months and can span thousands of kilometers. They result from a combination of oceanic and atmospheric processes, including persistent anomalous low-pressure conditions, reduced vertical mixing, or anomalous heat advection. MHWs significantly disrupt marine ecosystems, causing coral bleaching, shifts in ecosystem distributions, and sometimes fisheries collapses. As anthropogenic climate change increases background ocean temperatures, MHWs are becoming more frequent, intense, and longer-lasting, which raises concerns for ocean resilience and climate adaptation.</description>
+    </item>
+    <item>
+      <title>Research</title>
+      <link>http://localhost:1313/research/research-old/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/research-old/</guid>
+      <description>Marine Heatwaves Marine heatwaves (MHWs) are prolonged periods of anomalously high sea surface temperatures that persist for days to months and can span thousands of kilometers. They result from a combination of oceanic and atmospheric processes, including persistent anomalous low-pressure conditions, reduced vertical mixing, or anomalous heat advection.&#xA;MHWs significantly disrupt marine ecosystems, causing coral bleaching, shifts in ecosystem distributions, and sometimes fisheries collapses. As anthropogenic climate change increases background ocean temperatures, MHWs are becoming more frequent, intense, and longer-lasting, which raises concerns for ocean resilience and climate adaptation.</description>
+    </item>
+  </channel>
+</rss>

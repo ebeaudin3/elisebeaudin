@@ -1,0 +1,16 @@
+<footer class="site-footer">
+  <p>{{ .Site.Title }} &copy; {{ now.Year }}</p>
+  <p>Website made with Hugo[template:hyde]</p>
+  <div class="footer-links">
+    {{ with .Site.Params.email }}
+      <a href="mailto:{{ . }}" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+    {{ end }}
+    {{ with .Site.Params.linkedin }}
+      <a href="{{ . }}" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    {{ end }}
+  </div>
+</footer>

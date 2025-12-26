@@ -1,0 +1,37 @@
+<aside class="sidebar">
+  <div class="container sidebar-sticky">
+    
+    <div class="sidebar-about">
+      <a href="{{ .Site.BaseURL }}"><h1>{{ .Site.Title }}</h1></a>
+      <p style="font-size:20px;" class="lead">
+      {{ with .Site.Params.description }} {{.}} {{ else }}TEST.{{end}}
+      </p>
+   </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        {{ range .Site.Menus.main -}}
+          <li><a href="{{.URL}}"> {{ .Name }} </a></li>
+        {{- end }}
+      </ul>
+    </nav>
+  
+  <!-- Footer -->
+  <!--<p>Website made with Hugo[template:hyde]</p>-->
+  
+    {{ with .Site.Params.email }}
+      <a href="mailto:{{ . }}" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+    {{ end }}
+    {{ with .Site.Params.linkedin }}
+      <a href="{{ . }}" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    {{ end }}
+    <!--<p>{{ .Site.Title }} &copy; {{ now.Year }}</p>-->
+    <p style="font-size:10px; ">Copyright &copy; All rights reserved. {{ now.Year }} </p>
+    
+  </div>
+  
+</aside>

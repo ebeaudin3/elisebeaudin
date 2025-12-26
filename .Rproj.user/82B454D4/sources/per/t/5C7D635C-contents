@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  <!-- Head Section -->
+  {{ partial "head.html" . }}
+  
+  <body class="{{ .Site.Params.themeColor }} {{if .Site.Params.layoutReverse}}layout-reverse{{end}}">
+  
+  {{ partial "sidebar.html" . }}
+  <!-- Home page -->
+  {{ if .IsHome }}
+    {{ partial "home.html" . }}
+  
+  <!-- Research page -->
+  {{ else if .Params.isResearch }}
+    {{ partial "research.html" . }}
+    
+  <!-- Side Quests page -->
+  {{ else if .Params.isSideQuest }}
+    {{ partial "sidequests.html" . }}
+    
+  <!-- Other pages -->
+  {{ else }}
+  {{ partial "content.html" . }}
+  
+  {{ end }}
+  </body>
+  
+  
+</html>

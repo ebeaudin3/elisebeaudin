@@ -1,0 +1,10 @@
+<div class="sq-grid">
+  {{ range where (where .Site.RegularPages "Section" "sidequests") "Params.isSideQuest" true }}
+    <a href="{{ .Params.link }}" class="sq-button"
+       style="background-image: url('{{ .Params.image }}');"
+       {{ if eq .Params.link_type "external" }} target="_blank" rel="noopener" {{ end }}>
+      <span>{{ .Title }}</span>
+    </a>
+  {{ end }}
+</div>
+<!--<body style="background-color: #f0f0f0;">-->

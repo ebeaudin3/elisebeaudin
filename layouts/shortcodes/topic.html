@@ -1,0 +1,8 @@
+<section class="topic-section">
+  
+  <div class="topic-image" style="background-image: url('{{ .Get "image" }}');"></div>
+  <div class="topic-text">
+    <h2>{{ .Get "title" }}</h2>
+    <p>{{ .Inner | markdownify }}</p>
+  </div>
+</section>

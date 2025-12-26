@@ -1,0 +1,16 @@
+
+
+<div class="research-page">
+  <center><h1>Research</h1></center>
+  {{ range where .Site.RegularPages "Section" "research" }}
+    <div class="research-item">
+      <img src="{{ .Params.image }}" alt="{{ .Title }}" class="research-image">
+      <div class="research-text">
+        <h2>{{ .Title }}</h2>
+        <p>{{ .Params.summary }}</p>
+      </div>
+    </div>
+  {{ end }}
+</div>
+
+<body style="background-color: #f0f0f0;">

@@ -1,0 +1,53 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+theme = "hyde"
+title = "Élise Beaudin"
+
+[params]
+  disqusShortname = ""
+  googleAnalytics = ""
+  layoutReverse = false
+  theme = "hyde"
+  themeColor = "darkblue"
+  description = "Welcome! I am an oceanographer and a storyteller, currently a PhD Candidate at Brown University, in Providence, Rhode Island, USA."
+  header_image = "/img/Asako-Narahashi.jpeg"
+  header_video = "/vid/AdobeStock_wave.mov"
+  header_text = "stories of the ocean"
+  profile = "/img/profile-foret.png"
+  linkedin = "https://www.linkedin.com/in/elise-beaudin/"
+  email = "elise_beaudin@brown.edu"
+  
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "About Me"
+    url = "/aboutme/"
+    weight = 2
+  [[menu.main]]
+    name = "Research"
+    url = "/research/"
+    weight = 3
+  [[menu.main]]
+    name = "Publications"
+    url = "/publications/"
+    weight = 4
+  [[menu.main]]
+    name = "Side Quests"
+    url = "/sidequests/"
+    weight = 5
+    
+[markup]
+  [markup.tableOfContents]
+    endLevel = 2
+    startLevel = 1
+  [markup.highlight]
+    style = "dracula"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+home = ["HTML", "RSS", "Algolia"]
