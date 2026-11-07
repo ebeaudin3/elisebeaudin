@@ -1,165 +1,259 @@
+/* ==========================================
+   1. Tokens and reset
+   ========================================== */
+
+:root {
+    --navy: #0a0e27;
+    --ink: #333333;
+    --heading: #111111;
+    --muted: #888888;
+    --line: #eeeeee;
+    --paper: #ffffff;
+    --sidebar-width: 300px;
+    --content-max: 850px;
+    --sans: "Inter", "Noto Sans KR", sans-serif;
+    --serif: "Playfair Display", "Noto Sans KR", serif;
+}
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-body { 
-    font-family: 'Inter', sans-serif; 
-    background-color: #ffffff;
-    color: #333333; 
+body {
+    font-family: var(--sans);
+    background: var(--paper);
+    color: var(--ink);
     display: flex;
     height: 100vh;
+    overflow: hidden;
 }
 
+a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+}
+
+/* One language block is visible. script.js sets lang on <html>. */
+.lang-block { display: none; }
+html[lang="en"] .lang-block[lang="en"],
+html[lang="fr"] .lang-block[lang="fr"],
+html[lang="ko"] .lang-block[lang="ko"] { display: block; }
+
 /* ==========================================
-   SIDEBAR
+   2. Sidebar
    ========================================== */
 
 .sidebar {
-    width: 300px;
-    background-color: #0a0e27; /* Deep Navy */
+    width: var(--sidebar-width);
+    background: var(--navy);
     color: #ffffff;
     height: 100vh;
-    padding: 20px 35px;
+    padding: 28px 32px;
     position: fixed;
     left: 0;
     top: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    z-index: 100;
-    box-sizing: border-box;
-    overflow-y: auto;                  /* Sprout a scrollbar ONLY if content overflows the screen */
-    -webkit-overflow-scrolling: touch; /* Keeps scrolling silky smooth on iOS devices */
+    z-index: 20;
+    overflow-y: auto;
+}
+
+.sidebar a:link,
+.sidebar a:visited,
+.sidebar a:hover,
+.sidebar a:active {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.language-selector {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 22px;
+}
+
+.language-selector a {
+    opacity: 0.5;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
+.language-selector a:hover,
+.language-selector a.active-lang { opacity: 1; }
+
+.language-selector a.active-lang {
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 1px;
 }
 
 .profile-container {
-    margin-bottom: 25px;
     display: flex;
     justify-content: center;
-    width: 100%;
+    margin-bottom: 22px;
 }
 
-.profile-pic {
-    width: 140px;          /* Perfect, elegant size for the sidebar width */
-    height: 140px;         /* Must match the width for a perfect circle */
-    border-radius: 50%;    /* This creates the clean circular crop */
-    object-fit: cover;     /* CRITICAL: Prevents your face from stretching if the photo isn't a perfect square */
-    border: 2px solid rgba(255, 255, 255, 1); /* Adds a sophisticated, subtle frame against the navy background */
+.sidebar .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffffff;
 }
 
 .sidebar h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.2rem;
+    font-family: var(--serif);
+    font-size: 2.1rem;
+    font-weight: 700;
     line-height: 1.1;
-    letter-spacing: 1px;
+    letter-spacing: 0.04em;
 }
 
 .bio {
+    margin-top: 22px;
     font-weight: 300;
     font-size: 0.9rem;
     line-height: 1.5;
-    color: rgba(255, 255, 255, 0.7);
-    margin-top: 25px;
+    color: rgba(255, 255, 255, 0.72);
 }
 
-.nav-links { list-style: none; margin-top: 35px; flex-grow: 1; }
-.nav-links li { margin-bottom: 1px; }
+.nav-links {
+    list-style: none;
+    margin-top: 32px;
+    flex-grow: 1;
+}
+
+.nav-links li { margin-bottom: 8px; }
+
 .nav-links a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.85rem;
-    letter-spacing: 1.5px;
     position: relative;
-    padding-bottom: 4px;
     display: inline-block;
-}
-.nav-links a:link, 
-.nav-links a:visited, 
-.nav-links a:active {
-    color: #ffffff;
-}
-
-a:link {
-    color: #ffffff; /* White text (matches the EN color in your image) */
-    text-decoration: underline;
+    padding-bottom: 3px;
+    font-weight: 600;
+    font-size: 0.82rem;
+    letter-spacing: 0.12em;
 }
 
-/* Underline effect on hover/active */
 .nav-links a::after {
-    content: '';
+    content: "";
     position: absolute;
+    left: 0;
+    bottom: 0;
     width: 0;
     height: 1.5px;
-    bottom: 0;
-    left: 0;
-    background-color: #ffffff;
+    background: #ffffff;
     transition: width 0.3s ease;
 }
-.nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
+
+.nav-links a:hover::after,
+.nav-links a.active::after { width: 100%; }
 
 .social-icons {
     display: flex;
-    gap: 18px;            /* spacing between the two icons */
+    gap: 18px;
     align-items: center;
-    position: static !important;
-    padding-top: 30px;
-    margin-top: auto !important;
-    margin-bottom: 15px !important;
-}
-
-.social-icons a {
-    display: inline-block;
-    text-decoration: none;
+    margin-top: auto;
+    padding-top: 28px;
 }
 
 .social-icons img {
-    width: 20px;          /* Clean, subtle icon width */
-    height: 20px;         /* Clean, subtle icon height */
+    width: 20px;
+    height: 20px;
     object-fit: contain;
+    transition: transform 0.2s ease;
 }
 
-.social-icons a:hover img {
-    opacity: 1;
-    transform: translateY(-2px); /* Tiny, premium feeling 3D bounce */
-}
+.social-icons a:hover img { transform: translateY(-2px); }
 
-.social-icons + * {
-    display: block;
-    margin-top: 0;
-    margin-bottom: 15px !important;
-    font-size: 0.85rem;
-}
-
-/* Copyright text spacing */
-.social-icons + * + * {
-    display: block;
+.copyright {
+    margin-top: 14px;
     font-size: 0.72rem;
     line-height: 1.4;
-    letter-spacing: 0.5px;
-    opacity: 0.35;
-    padding-bottom: 5px; /* Keeps it slightly elevated from the absolute edge */
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.4);
 }
 
-.language-selector a.active-lang {
-    font-weight: 600;
-    color: #ffffff !important;
-    border-bottom: 1px solid #ffffff;
+.mobile-nav-toggle {
+    display: none;
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 30;
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 6px;
+    background: var(--navy);
+    color: #ffffff;
+    font-size: 1.25rem;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
 }
-
-.copyright { font-size: 0.7rem; color: rgba(255, 255, 255, 0.4); }
 
 /* ==========================================
-   GLOBAL CONTENT FRAMEWORK 
+   3. Content column
    ========================================== */
+
 .content {
-    margin-left: 300px;         /* Steps aside for the sidebar */
-    width: calc(100% - 300px);  /* Fills the entire remaining screen width */
+    margin-left: var(--sidebar-width);
+    width: calc(100% - var(--sidebar-width));
     height: 100vh;
+    overflow-y: auto;
+}
+
+.page-layout { padding: 64px 48px 80px; }
+
+.content a:link,
+.content a:visited,
+.content a:hover,
+.content a:active {
+    color: var(--navy);
+}
+
+.page-title {
+    font-family: var(--serif);
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--heading);
+    margin-bottom: 36px;
+}
+
+.page-layout h2 {
+    font-family: var(--serif);
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: var(--heading);
+    margin: 8px 0 22px;
+}
+
+.page-layout h3 {
+    font-family: var(--sans);
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--heading);
+    margin: 32px 0 14px;
+}
+
+.page-layout p {
+    margin-bottom: 16px;
+    line-height: 1.65;
+}
+
+.separator {
+    border: none;
+    border-top: 1px solid var(--line);
+    margin: 32px 0;
 }
 
 /* ==========================================
-   HOME PAGE (Full Bleed Image/GIF)
+   4. Home
    ========================================== */
+
+.is-home-page .content {
+    padding: 0;
+    overflow: hidden;
+}
+
 .hero-gif {
     width: 100%;
     height: 100%;
@@ -169,194 +263,116 @@ a:link {
 }
 
 /* ==========================================
-   TEXT CONTENT LAYOUT (About Me, Research)
+   5. About
    ========================================== */
-.page-layout {
-    padding: 60px;
-    max-width: 950px;   /* Prevents long text lines on wide monitors */
-    overflow-y: auto;   /* Scrollbar appears ONLY when content is long */
+
+.subtext {
+    color: var(--muted);
+    font-size: 0.92rem;
 }
 
-.page-layout p {
-    margin-bottom: 18px; /* space after paragraph */
-    line-height: 1.65;   /* space between lines of same paragram */
-    color: #333333;
-}
-
-.pub-section h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.9rem;
-    margin-top: 20px;
-    margin-bottom: 25px;
-    color: #111111;
-}
-
-.separator { 
-    border: none; 
-    border-top: 1px solid #eeeeee; 
-    margin: 35px 0; 
-}
-
-.page-layout h3 {
-    font-family: 'Inter', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #111111;
-    margin-top: 35px;    /* Repousse l'année précédente vers le haut */
-    margin-bottom: 15px; /* Donne de l'espace avant les textes en dessous */
-}
-
-.page-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.6rem;
-    margin-bottom: 40px;
-    color: #111111;
-}
-
-.profile-block {
-    display: flex;
-    gap: 40px;
-    margin-bottom: 40px;
-}
-
-.profile-pic {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    flex-shrink: 0; 
-}
-
-.page-layout a {
-    color: #0a0e27;
-    text-decoration: underline;
-}
-
-.bio-text { font-size: 1rem; line-height: 1.6; color: #333333; }
-.bio-text p { margin-bottom: 15px; }
-
-/* Tables */
-.clean-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
-.clean-table td { border: none !important; padding: 10px 0; vertical-align: top; }
+.clean-table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+.clean-table td { padding: 10px 0; vertical-align: top; }
 .date-col { width: 130px; font-weight: 600; color: #555555; }
 .inline-rows td { padding: 6px 0; }
 
-/* ==========================================
-   INSTITUTIONS LOGO GRID
-   ========================================== */
-.institutions-section {
-    margin-top: 40px;
-    padding-bottom: 20px;
-}
+.institutions-section { margin-top: 8px; }
 
-.institutions-section h3 {
-    font-family: 'Inter', sans-serif;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: #888888;
-    margin-bottom: 25px;
-    font-weight: 600;
-}
-
-/* Flex container that centers the logos and wraps them if they run out of space */
 .logo-grid {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: flex-start;
-    gap: 40px; /* Even spacing between logos */
+    gap: 36px;
+}
+
+.logo-grid a:link,
+.logo-grid a:visited,
+.logo-grid a:hover,
+.logo-grid a:active {
+    text-decoration: none;
+    color: inherit;
+    line-height: 0;
 }
 
 .logo-grid img {
-    height: 80px;          /* logo sizes */
-    width: auto;           /* Automatically scales the width proportionally */
-    object-fit: contain;   /* Prevents distortion */
-    
-    /* The chic portfolio trick: muted and grayscale by default */
+    height: 80px;
+    width: auto;
+    object-fit: contain;
     filter: grayscale(100%);
     opacity: 0.5;
-    transition: all 0.3s ease;
+    transition: filter 0.3s ease, opacity 0.3s ease;
 }
 
-/* Elegant color fade on hover */
-.logo-grid img:hover {
+.logo-grid a:hover img,
+.logo-grid a:focus-visible img {
     filter: grayscale(0%);
     opacity: 1;
 }
 
 /* ==========================================
-   PAGE RESEARCH
+   6. Research
    ========================================== */
+
 .research-intro {
-    font-size: 1.15rem;
+    font-size: 1.12rem;
     line-height: 1.6;
     color: #444444;
-    margin-bottom: 60px;
+    margin-bottom: 8px;
     font-style: italic;
 }
 
-/* Flexbox aligns text on left, image on right */
 .research-item {
     display: flex;
-    gap: 45px;            /* Nice gap between text and image */
-    align-items: center;  /* Centers them vertically relative to each other */
-    margin-bottom: 65px;  /* Clean breathing room between projects */
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 8px;
 }
 
-.research-text {
-    flex: 1;              /* Takes up the maximum available space */
-}
+.research-text { flex: 1; }
 
-.research-theme h2, 
 .research-text h2 {
-    font-family: 'Playfair Display', serif;
     font-size: 1.65rem;
-    color: #0a0e27;
+    color: var(--navy);
     margin-bottom: 6px;
 }
 
 .research-meta {
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #888888;
+    margin-bottom: 12px;
+    font-size: 0.8rem;
     font-weight: 600;
-    margin-bottom: 14px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
 }
 
-/* THE IMAGE CONTAINER (Fixed proportions so it looks uniform) */
 .research-image {
-    width: 380px;         /* Increased from 280px so plots are readable */
-    height: 250px;        /* Increased from 180px to maintain a great aspect ratio */
-    flex-shrink: 0;       
+    width: 380px;
+    height: 250px;
+    flex-shrink: 0;
     overflow: hidden;
-    border-radius: 6px;   
-    border: 1px solid #f0f0f0; /* Adds a soft boundary for plots with white backgrounds */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03); /* Extremely subtle depth */
+    border-radius: 6px;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
 }
 
 .research-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;    /* CRITICAL: Automatically crops any photo to fit the box without distortion */
+    object-fit: cover;
 }
 
-
 /* ==========================================
-   PUBLICATIONS PAGE
+   7. Publications
    ========================================== */
 
 .citation {
     position: relative;
+    display: block;
+    margin-bottom: 20px;
     padding-left: 35px;
-    margin-bottom: 22px;
     line-height: 1.65;
-    color: #333333;
-    display: block; 
 }
 
-/* 2. THE MAGICAL FISH BULLET (The Child) */
 .citation::before {
     content: "";
     position: absolute;
@@ -364,147 +380,310 @@ a:link {
     top: 5px;
     width: 24px;
     height: 18px;
-    background-image: url('images/fish-bullet.png'); 
-    background-size: contain;
-    background-repeat: no-repeat;
+    background: url("images/fish-bullet.png") center / contain no-repeat;
+}
+
+.conference-list {
+    margin: 0 0 12px;
+    padding-left: 1.15rem;
+}
+
+.conference-list li {
+    margin-bottom: 8px;
+    line-height: 1.55;
 }
 
 /* ==========================================
-   SIDE QUESTS PAGE (Grid Portfolio)
+   8. Side quests
    ========================================== */
-.p-50 { padding: 50px; } /* Legacy padding class */
 
-.quests-grid {
+.page-subtitle {
+    margin-top: -18px;
+    margin-bottom: 36px;
+    color: var(--muted);
+    font-size: 1.05rem;
+    font-weight: 300;
+}
+
+.quest-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 28px;
 }
 
-.quest-item { text-align: center; }
-.quest-item img {
-    width: 100%;
-    aspect-ratio: 16/9;
-    object-fit: cover;
-    border-radius: 4px;
-    transition: opacity 0.3s;
+.quest-card {
+    display: block;
+    overflow: hidden;
+    background: var(--paper);
+    border: 1px solid #ececec;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.quest-item img:hover { opacity: 0.8; }
-.quest-item h3 { font-family: 'Playfair Display', serif; margin-top: 15px; }
+
+.quest-card:link,
+.quest-card:visited,
+.quest-card:hover,
+.quest-card:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+.quest-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(10, 14, 39, 0.08);
+}
+
+.card-thumbnail {
+    position: relative;
+    height: 190px;
+    overflow: hidden;
+    background: #eef1f4;
+}
+
+.card-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.category-badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    background: rgba(10, 14, 39, 0.9);
+    color: #ffffff;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+}
+
+.card-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(10, 14, 39, 0.18);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.view-btn {
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: #ffffff;
+    color: var(--navy);
+    font-size: 0.82rem;
+    font-weight: 600;
+    transform: translateY(8px);
+    transition: transform 0.3s ease;
+}
+
+.quest-card:hover .card-overlay,
+.quest-card:focus-visible .card-overlay { opacity: 1; }
+
+.quest-card:hover .view-btn,
+.quest-card:focus-visible .view-btn { transform: none; }
+
+.card-info { padding: 22px; }
+
+.card-info h3 {
+    margin: 0 0 8px;
+    font-family: var(--serif);
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--navy);
+}
+
+.card-info h3:last-child { margin-bottom: 0; }
+
+.card-info p {
+    margin: 0;
+    color: #555555;
+    font-size: 0.95rem;
+    line-height: 1.55;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 28px;
+    font-size: 0.85rem;
+}
+
+.story-byline {
+    margin-top: -18px;
+    margin-bottom: 32px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.15rem;
+    color: var(--muted);
+}
+
+.story-body {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 400;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.story-end {
+    margin-top: 28px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 400;
+    font-size: 1.15rem;
+    text-align: center;
+}
 
 /* ==========================================
-   MOBILE RESPONSIVENESS (The Adapter)
+   9. Page change
+   ========================================== */
+
+@keyframes page-in {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: none; }
+}
+
+@keyframes page-out {
+    from { opacity: 1; transform: none; }
+    to { opacity: 0; transform: translateY(4px); }
+}
+
+.content { animation: page-in 280ms ease; }
+
+body.is-leaving .content {
+    animation: page-out 160ms ease forwards;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .content,
+    body.is-leaving .content { animation: none; }
+}
+
+/* ==========================================
+   10. Small screens
    ========================================== */
 
 @media (max-width: 1000px) {
-    body { flex-direction: column; overflow-y: auto; }
-    body:has(.hero-gif), main:has(.hero-gif) {background-color: #050814 !important; padding: 0 !important;overflow: hidden; }
-    .sidebar {position: fixed !important; top: 0; left: -280px; width: 280px; height: 100vh; z-index: 9999; 
-            transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);  box-shadow: 5px 0 25px rgba(0, 0, 0, 0.15);
-            overflow-y: auto; -webkit-overflow-scrolling: touch;}
-    .sidebar.mobile-open {left: 0;}
-    .content { margin-left: 0; width: 100%; height: auto; }
-    .content.page-layout {margin-left: 0 !important; padding: 80px 24px 40px 24px !important; }
-    .page-layout { padding: 30px; }
-    .profile-block { flex-direction: column; gap: 20px; }
-    .profile-pic {width: 150px !important;  height: 150px !important;}
-    .hero-gif { width: 100vw !important; height: 100vh !important; object-fit: cover !important; position: fixed; top: 0; left: 0;} /* Prevents the GIF from layout distortion on mobile */
-    .logo-grid {justify-content: center; gap: 30px; }
-    .logo-grid img { height: 70px; }
-    .research-item { flex-direction: column; gap: 20px; } /* Stacks image under text on mobile */
-    .research-image { width: 100% !important; height: 350px !important; }       /* Makes image full width on mobile */
-    .research-image img {object-fit: cover; object-position: center;}
-    .mobile-nav-toggle {
-        display: block !important; /* Shows up ONLY on mobile screens */
-        position: fixed;
-        top: 20px;
-        left: 20px;
-        z-index: 10000;          /* Stays completely above the hidden sidebar */
-        background: #0a0e27;     /* Elegant matching dark navy */
-        color: #ffffff;
-        border: none;
-        width: 42px;
-        height: 42px;
-        font-size: 1.3rem;
-        cursor: pointer;
-        border-radius: 6px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    .mobile-nav-toggle.is-open {left: 220px; background: transparent; box-shadow: none;}
-
-    body.is-home-page {display: flex !important; flex-direction: column !important; min-height: 100vh !important; background-color: #050814 !important; overflow-y: auto !important; }
-    
-    .is-home-page .sidebar {
-        position: relative !important;   /* Drops it into natural layout flow at the top */
-        left: 0 !important;             /* Pulls it out of hiding */
-        width: 100% !important;          /* Spans edge-to-edge on the phone */
-        height: auto !important;         /* Packs tightly around the content */
-        display: flex !important;
-        overflow: visible !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        padding: 30px 20px 20px 20px !important;
-        background: #0a0e27 !important; /* Your signature deep navy background */
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
-    }
-    .is-home-page .profile-container { margin-bottom: 12px !important; justify-content: center !important;  }
-    .is-home-page .profile-pic {width: 250px !important; height: 250px !important; border: 3px solid rgba(255, 255, 255, 0.2) !important; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);}
-    .is-home-page .sidebar h1 {font-size: 1.6rem !important; margin-top: 15px !important; margin-bottom: 8px !important; text-align: center !important;}
-    .is-home-page .sidebar h2 {font-size: 1.4rem !important; text-align: center !important; margin-bottom: 6px !important; letter-spacing: 1px !important; }
-    .is-home-page .sidebar p {text-align: center !important; font-size: 0.88rem !important; max-width: 320px; margin: 0 auto 16px auto !important; opacity: 0.75; line-height: 1.5;}
-    .is-home-page .nav-links {display: flex !important; flex-direction: row !important; flex-wrap: wrap !important; justify-content: center !important; gap: 10px 18px !important; margin-top: 25px !important; margin-bottom: 5px !important; width: 100%;}
-    .is-home-page .nav-links a {font-size: 0.8rem !important;letter-spacing: 1px !important; margin: 0 !important;}
-    .is-home-page .language-selector {margin-top: 0 !important; justify-content: center !important;  margin-bottom: 5px !important; }
-    .is-home-page .social-icons,
-    .is-home-page .copyright-text,
-    .is-home-page .mobile-nav-toggle {display: none !important;}
-    .is-home-page .content.page-layout { margin-left: 0 !important; padding: 0 !important; width: 100% !important;}
-    .is-home-page .hero-gif {width: 100% !important; height: auto !important;  flex-grow: 1 !important; min-height: 250px; display: block !important; object-fit: cover !important; position: relative !important; top: 0; left: 0; }
-} /* @media (max-width: 1000px) */
-
-/* Base desktop rule to keep the toggle button completely invisible on large monitors */
-@media (min-width: 1001px) {
-    /* Base desktop rule to keep the toggle button completely invisible on large monitors */
-    .mobile-nav-toggle { 
-        display: none !important; 
+    body {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+        overflow-y: auto;
     }
 
-    /* ==========================================================
-       1. TEXT PAGES: Centered Layout Framework (About, Research, etc.)
-       ========================================================== */
+    .sidebar {
+        left: -280px;
+        width: 280px;
+        transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .sidebar.mobile-open {
+        left: 0;
+        box-shadow: 5px 0 25px rgba(0, 0, 0, 0.18);
+    }
+
+    .mobile-nav-toggle { display: flex; }
+
+    .mobile-nav-toggle.is-open {
+        left: 220px;
+        background: transparent;
+        box-shadow: none;
+    }
+
     .content {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;   /* Centers all child items dead-center on the monitor */
-        padding: 60px 40px !important;    
-        max-width: none !important;       /* CRITICAL: Breaks the 950px constraint so container spans full screen width */
-        width: calc(100% - 300px) !important;
-        box-sizing: border-box;
+        margin-left: 0;
+        width: 100%;
+        height: auto;
     }
 
-    /* Automatically caps all text elements, profiles, and tables at a pristine reading width */
-    .content > * {
-        width: 100% !important;
-        max-width: 850px !important;  
-        box-sizing: border-box;
+    .page-layout { padding: 76px 24px 48px; }
+
+    .sidebar .profile-pic { width: 150px; height: 150px; }
+
+    .logo-grid { justify-content: center; gap: 28px; }
+    .logo-grid img { height: 68px; }
+
+    .research-item { flex-direction: column; align-items: stretch; gap: 18px; }
+    .research-image { width: 100%; height: 220px; }
+
+    .is-home-page {
+        background: #050814;
     }
 
-    /* ==========================================================
-       2. HOMEPAGE OVERRIDES: Set the Wave GIF Free Edge-to-Edge
-       ========================================================== */
+    .is-home-page .sidebar {
+        position: relative;
+        left: 0;
+        width: 100%;
+        height: auto;
+        overflow: visible;
+        align-items: center;
+        padding: 28px 20px 18px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .is-home-page .profile-pic {
+        width: 220px;
+        height: 220px;
+        border-color: rgba(255, 255, 255, 0.35);
+    }
+
+    .is-home-page .sidebar h1,
+    .is-home-page .bio { text-align: center; }
+
+    .is-home-page .bio {
+        max-width: 340px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .is-home-page .language-selector { justify-content: center; }
+
+    .is-home-page .nav-links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 16px;
+        width: 100%;
+        margin-top: 22px;
+    }
+
+    .is-home-page .nav-links li { margin: 0; }
+
+    .is-home-page .social-icons,
+    .is-home-page .copyright,
+    .is-home-page .mobile-nav-toggle { display: none; }
+
     .is-home-page .content {
-        display: block !important;        /* Disables the text flex-centering system completely */
-        padding: 0 !important;            /* Vaporizes the white border margins */
-        width: calc(100% - 300px) !important;
-        height: 100vh !important;
+        display: flex;
+        flex-direction: column;
+        min-height: 240px;
+        overflow: hidden;
     }
 
-    .is-home-page .content > * {
-        max-width: none !important;       /* Shatters the 850px column limit so the GIF fills the window */
-        width: 100% !important;
-        height: 100% !important;
+    .is-home-page .hero-gif {
+        flex: 1;
+        min-height: 240px;
+        height: auto;
+    }
+}
+
+@media (min-width: 1001px) {
+    .content.page-layout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content.page-layout > * {
+        width: 100%;
+        max-width: var(--content-max);
     }
 }

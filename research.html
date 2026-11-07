@@ -1,117 +1,291 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
+      data-title-en="Research | Élise Beaudin"
+      data-title-fr="Recherche | Élise Beaudin"
+      data-title-ko="연구 | Élise Beaudin">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research | Élise Beaudin</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&family=Noto+Sans+KR:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 <body>
-
     <nav class="sidebar" id="custom-sidebar"></nav>
-    
+
     <main class="content page-layout">
-    
-        <h1 class="page-title">Research</h1>
-        
-        <p class="research-intro">
-            
-            My research interests are varied: from <b>marine heatwaves</b> to <b>biophysical interactions</b>, <b>ocean transport under climate extremes</b> and <b>ocean soundscape monitoring</b>.
-            To do this, I use a combination of oceanic and atmospheric numerical models, satellite imagery, and field observations.
-            I also hope to bridge the gap between scientific research and application in <b>marine conservation</b> through <b>community-led initiatives</b> for coastal monitoring.
-        </p>
+        <div class="lang-block" lang="en">
+            <h1 class="page-title">Research</h1>
+            <p class="research-intro">
+                My research interests are varied: from <b>marine heatwaves</b> to <b>biophysical interactions</b>, <b>ocean transport under climate extremes</b> and <b>ocean soundscape monitoring</b>.
+                To do this, I use a combination of oceanic and atmospheric numerical models, satellite imagery, and field observations.
+                I also hope to bridge the gap between scientific research and application in <b>marine conservation</b> through <b>community-led initiatives</b> for coastal monitoring.
+            </p>
+            <hr class="separator">
 
-        <hr class="separator">
-        
-        <section class="research-item">
-            <div class="research-text">
-                <h2>Underwater Acoustics & Whale Monitoring</h2>
-                <div class="research-meta">Passive Acoustics | Data Quality</div>
-                <p>
-                    Ocean Networks Canada operates a vast network of underwater hydrophones deployed across all three of Canada's coasts.
-                    As anthropogenic ocean noise becomes a rising threat to marine mammal health, we use acoustic data for tracking whale activity, mapping migration patterns, and monitoring marine traffic.
-                    My role focuses on ensuring the data is verified, calibrated, and science-ready for researchers worldwide.
-                    Listen to sounds captured by our hydrophones <a href=https://soundcloud.com/oceannetworkscanada>here</a>.
-                </p>
-            </div>
-            <div class="research-image">
-                <img src="images/southern-residents.png" alt="Southern Residents Killer Whales" loading="lazy" decoding="async">
-            </div>
-        </section>
+            <section class="research-item">
+                <div class="research-text">
+                    <h2>Underwater Acoustics &amp; Whale Monitoring</h2>
+                    <div class="research-meta">Passive Acoustics | Data Quality</div>
+                    <p>
+                        Ocean Networks Canada operates a vast network of underwater hydrophones deployed across all three of Canada's coasts.
+                        As anthropogenic ocean noise becomes a rising threat to marine mammal health, we use acoustic data for tracking whale activity, mapping migration patterns, and monitoring marine traffic.
+                        My role focuses on ensuring the data is verified, calibrated, and science-ready for researchers worldwide.
+                        Listen to sounds captured by our hydrophones <a href="https://soundcloud.com/oceannetworkscanada" target="_blank" rel="noopener noreferrer">here</a>.
+                    </p>
+                </div>
+                <div class="research-image">
+                    <img src="images/southern-residents.png" alt="Southern Residents Killer Whales" loading="lazy" decoding="async">
+                </div>
+            </section>
+            <hr class="separator">
 
-        <hr class="separator">
+            <section class="research-item">
+                <div class="research-text">
+                    <h2>Coastal Monitoring &amp; Indigenous Partnerships</h2>
+                    <div class="research-meta">Community-Based Monitoring</div>
+                    <p>
+                        The Community Fishers’ program at Ocean Networks Canada supports Indigenous coastal communities and organizations throughout Canada to monitor ocean conditions within their territories.
+                        We are establishing baselines for ocean conditions (temperature, salinity, chlorophyll, oxygen), to better understand changes and impacts on marine ecosystems.
+                        The communities are based in British Columbia, Newfoundland &amp; Labrador, Nunatsiavut, Nunavik, and Nunavut.
+                    </p>
+                </div>
+                <div class="research-image">
+                    <img src="images/labrador.png" alt="Coastal monitoring in Labrador" loading="lazy" decoding="async">
+                </div>
+            </section>
+            <hr class="separator">
 
-        <section class="research-item">
-            <div class="research-text">
-                <h2>Coastal Monitoring & Indigenous Partnerships</h2>
-                <div class="research-meta">Community-Based Monitoring </div>
-                <p>
-                    The Community Fishers’ program at Ocean Networks Canada supports Indigenous coastal communities and organizations throughout Canada to monitor ocean conditions within their territories. 
-                    We are establishing baselines for ocean conditions (temperature, salinity, chlorophyll, oxygen), to better understand changes and impacts on marine ecosystems.
-                    The communities are based in British Columbia, NewfoundLand & Labrador, Nunatsiavut, Nunavik, and Nunavut.
-                </p>
-            </div>
-            <div class="research-image">
-                <img src="images/labrador.png" alt="Coastal monitoring in Labrador" loading="lazy" decoding="async">
-            </div>
-        </section>
+            <section class="research-item">
+                <div class="research-text">
+                    <h2>Gulf of Alaska Transport Dynamics</h2>
+                    <div class="research-meta">Lagrangian Tracking</div>
+                    <p>
+                        The Gulf of Alaska supports important fisheries that are highly vulnerable to large-scale climate extremes like ENSO and marine heatwaves.
+                        My research investigates how these major climate drivers alter the transport of nutrient-rich coastal waters into the nutrient-depleted basin interior.
+                        I use Lagrangian particle tracking to simulate and analyze the pathways of coastal waters across large-scale currents and mesoscale eddies.
+                    </p>
+                </div>
+                <div class="research-image">
+                    <img src="images/goa-transport.png" alt="Lagrangian particle tracking" loading="lazy" decoding="async">
+                </div>
+            </section>
+            <hr class="separator">
 
-        <hr class="separator">
+            <section class="research-item">
+                <div class="research-text">
+                    <h2>Submesoscale Dynamics &amp; Biophysical Interactions</h2>
+                    <div class="research-meta">Oceanographic Observations | Fieldwork</div>
+                    <p>
+                        Submesoscale dynamics are ocean motions that happen on scales of 1–10 kilometers.
+                        Using high-resolution observations of ocean physics and biology from the <a href="https://www.earthdata.nasa.gov/data/projects/s-mode" target="_blank" rel="noopener noreferrer">S-MODE</a> IOP2 2023 expedition aboard the R/V <em>Sally Ride</em>.
+                        I study how biophysical interactions within submesoscale features impact phytoplankton biomass and distribution.
+                        This work contributes to larger efforts to assess the ocean's carbon transport and cycling.
+                    </p>
+                </div>
+                <div class="research-image">
+                    <img src="images/submesoscale.png" alt="Submesoscale dynamics modulate phytoplankton distribution" loading="lazy" decoding="async">
+                </div>
+            </section>
+            <hr class="separator">
 
-        <section class="research-item">
-            <div class="research-text">
-                <h2>Gulf of Alaska Transport Dynamics</h2>
-                <div class="research-meta">Lagrangian Tracking </div>
-                <p>
-                    The Gulf of Alaska supports important fisheries that are highly vulnerable to large-scale climate extremes like ENSO and marine heatwaves.
-                    My research investigates how these major climate drivers alter the transport of nutrient-rich coastal waters into the nutrient-depleted basin interior.
-                    I use Lagrangian particle tracking to simulate and analyze the pathways of coastal waters across large-scale currents and mesoscale eddies.
-                </p>
-            </div>
-            <div class="research-image">
-                <img src="images/goa-transport.png" alt="Lagrangian particle tracking" loading="lazy" decoding="async">
-            </div>
-        </section>
+            <section class="research-item">
+                <div class="research-text">
+                    <h2>Marine Heatwaves &amp; Climate Extremes</h2>
+                    <div class="research-meta">Ocean and Atmosphere Modelling</div>
+                    <p>
+                        Marine heatwaves are prolonged periods of hotter-than-usual sea surface temperatures.
+                        Using oceanic and atmospheric models, I studied how atmosphere-ocean heat fluxes impact rainfall and coastal watermass redistribution in the Northeast Pacific.
+                        I am also interested in the impacts of these extremes on marine ecosystem disruptions, including coral bleaching, dissolved oxygen supplies, and shifts in species distributions.
+                    </p>
+                </div>
+                <div class="research-image">
+                    <img src="images/mhw.png" alt="Sea surface temperature anomaly" loading="lazy" decoding="async">
+                </div>
+            </section>
+        </div>
 
-        <hr class="separator">
+        <div class="lang-block" lang="fr">
+            <h1 class="page-title">Recherche</h1>
+            <p class="research-intro">
+                Mes intérêts quant à la recherche sont très variés : des <b>vagues de chaleur marines</b> aux <b>interactions biophysiques</b>, en passant par la <b>dynamique du transport océanique</b> et la <b>propagation du son dans l'eau</b>.
+                Ce travail requiert l'utilisation d'une combinaison de simulations numériques des courants océaniques et atmosphériques, de données d'imagerie satellite et d'observations en mer.
+                De plus, je souhaite faire le pont entre la recherche scientifique et les applications en <b>conservation marine</b> par le biais de collaborations avec les communautés côtières.
+            </p>
+            <hr class="separator">
 
-        <section class="research-item">
-            <div class="research-text">
-                <h2>Submesoscale Dynamics & Biophysical Interactions</h2>
-                <div class="research-meta">Oceanographic Observations | Fieldwork</div>
-                <p>
-                    Submesoscale dynamics are ocean motions that happen on scales of 1–10 kilometers.
-                    Using high-resolution observations of ocean physics and biology from the <a href=https://www.earthdata.nasa.gov/data/projects/s-mode>S-MODE</a> IOP2 2023 expedition aboard the R/V<em>Sally Ride</em>.
-                    I study how biophysical interactions within submesoscale features impact phytoplankton biomass and distribution.
-                    This work contributes to larger efforts to assess the ocean's carbon transport and cycling.
-                </p>
-            </div>
-            <div class="research-image">
-                <img src="images/submesoscale.png" alt="submesoscale dynamics modulate phytoplankton distribution" loading="lazy" decoding="async">
-            </div>
-        </section>
+            <section class="research-item">
+                <div class="research-text">
+                    <h2>Acoustique sous-marine &amp; protection des mammifères marins</h2>
+                    <div class="research-meta">Acoustique passive | Cartographie</div>
+                    <p>
+                        Ocean Networks Canada possède un vaste réseau d'hydrophones, déployés dans les trois océans du Canada : le Pacifique, l'Atlantique et l'Arctique.
+                        L'augmentation de l'activité humaine en mer apporte son lot de pollution sonore dans l'océan, au détriment de la faune et des mammifères marins comme les baleines.
+                        Les données acoustiques marines nous permettent notamment de cartographier les couloirs de migration des baleines ainsi que les zones de trafic maritime.
+                        Écoutez <a href="https://soundcloud.com/oceannetworkscanada" target="_blank" rel="noopener noreferrer">ici</a> les sons capturés par nos hydrophones.
+                    </p>
+                </div>
+                <div class="research-image">
+                    <img src="images/southern-residents.png" alt="Épaulards résidents du Sud" loading="lazy" decoding="async">
+                </div>
+            </section>
+            <hr class="separator">
 
-        <hr class="separator">
+            <section class="research-item">
+                <div class="research-text">
+                    <h2>Océanographie côtière et partenariats autochtones</h2>
+                    <div class="research-meta">Collaborations | Changements climatiques</div>
+                    <p>
+                        Le programme <em>Community Fishers</em> d'Ocean Networks Canada soutient les communautés côtières autochtones partout au Canada afin de protéger les zones océaniques côtières au sein de leurs territoires.
+                        Nous établissons des bases de référence pour des paramètres océaniques comme la température, la salinité, la chlorophylle et l'oxygène, afin de mieux comprendre les changements environnementaux et leurs impacts sur les écosystèmes marins.
+                        Les communautés partenaires sont situées en Colombie-Britannique, à Terre-Neuve-et-Labrador, au Nunatsiavut, au Nunavik et au Nunavut.
+                    </p>
+                </div>
+                <div class="research-image">
+                    <img src="images/labrador.png" alt="Suivi côtier au Labrador" loading="lazy" decoding="async">
+                </div>
+            </section>
+            <hr class="separator">
 
-        <section class="research-item">
-            <div class="research-text">
-                <h2>Marine Heatwaves & Climate Extremes</h2>
-                <div class="research-meta">Ocean and Atmosphere Modelling </div>
-                <p>
-                    Marine heatwaves are prolonged periods of hotter-than-usual sea surface temperatures. 
-                    Using oceanic and atmospheric models, I studied how atmosphere-ocean heat fluxes impact rainfall and coastal watermass redistribution in the Northeast Pacific.
-                    I am also interested in the impacts of these extremes on marine ecosystem disruptions, including coral bleaching, dissolved oxygen supplies, and shifts in species distributions.
-                </p>
-            </div>
-            <div class="research-image">
-                <img src="images/mhw.png" alt="sea surface temperature anomaly" loading="lazy" decoding="async">
-            </div>
-        </section>
+            <section class="research-item">
+                <div class="research-text">
+                    <h2>Transport océanique dans le Golfe d'Alaska</h2>
+                    <div class="research-meta">Lagrangian Tracking</div>
+                    <p>
+                        Le Golfe d'Alaska est une région importante pour la pêche, et est très vulnérable aux phénomènes climatiques extrêmes tels que El Niño et les vagues de chaleur marines.
+                        Mes recherches étudient comment divers facteurs peuvent altérer le transport des eaux côtières riches en nutriments vers l'intérieur du bassin, une zone qui en est naturellement pauvre.
+                        J'utilise le <em>Lagrangian particle tracking</em> pour simuler et analyser les trajectoires de ces eaux côtières par les courants marins et tourbillons de mésoéchelle.
+                    </p>
+                </div>
+                <div class="research-image">
+                    <img src="images/goa-transport.png" alt="Suivi lagrangien de particules" loading="lazy" decoding="async">
+                </div>
+            </section>
+            <hr class="separator">
 
+            <section class="research-item">
+                <div class="research-text">
+                    <h2>Sub-mésoéchelle &amp; interactions biophysiques</h2>
+                    <div class="research-meta">Observations océanographiques</div>
+                    <p>
+                        La dynamique de sub-mésoéchelle désigne les mouvements océaniques qui se produisent à des échelles de 1 à 10 kilomètres.
+                        J'utilise des données d'observations océaniques à haute résolution issues de l'expédition en mer <a href="https://www.earthdata.nasa.gov/data/projects/s-mode" target="_blank" rel="noopener noreferrer">S-MODE</a> IOP2 (2023) à bord du navire de recherche <em>Sally Ride</em>, pour étudier les interactions biophysiques au sein de ces structures.
+                        Ces travaux contribuent aux efforts visant à mieux comprendre le cycle du carbone océanique.
+                    </p>
+                </div>
+                <div class="research-image">
+                    <img src="images/submesoscale.png" alt="La dynamique de sub-mésoéchelle module la distribution du phytoplancton" loading="lazy" decoding="async">
+                </div>
+            </section>
+            <hr class="separator">
+
+            <section class="research-item">
+                <div class="research-text">
+                    <h2>Vagues de chaleur marines &amp; extrêmes climatiques</h2>
+                    <div class="research-meta">Modélisation océanique et atmosphérique</div>
+                    <p>
+                        Les vagues de chaleur marines sont des périodes prolongées où la température d'eau de surface est anormalement élevée.
+                        À l'aide de modèles océaniques et atmosphériques, j'ai étudié comment les flux de chaleur atmosphère-océan influencent les précipitations et la redistribution des masses d'eau côtières dans le Pacifique Nord-Est.
+                        Je m'intéresse également aux conséquences de ces extrêmes sur les perturbations des écosystèmes marins, par exemple le blanchissement des coraux et la concentration d'oxygène dans l'eau.
+                    </p>
+                </div>
+                <div class="research-image">
+                    <img src="images/mhw.png" alt="Anomalie de température de surface" loading="lazy" decoding="async">
+                </div>
+            </section>
+        </div>
+
+        <div class="lang-block" lang="ko">
+            <h1 class="page-title">연구</h1>
+            <p class="research-intro">
+                저의 연구 관심 분야는 <b>해양 열파</b>부터 <b>생물물리학적 상호작용</b>, <b>기후 극값 하에서의 해양 수송</b>, 그리고 <b>해양 음향 풍경 모니터링</b>까지 다양합니다.
+                이를 위해 저는 해양 및 대기 수치 모델, 위성 이미지, 현장 관측 자료를 결합하여 활용합니다.
+                또한 연안 모니터링을 위한 <b>지역사회 주도 이니셔티브</b>를 통해 과학적 연구와 <b>해양 보존</b> 실무 간의 가교 역할을 하고자 합니다.
+            </p>
+            <hr class="separator">
+
+            <section class="research-item">
+                <div class="research-text">
+                    <h2>수중 음향 및 고래 모니터링</h2>
+                    <div class="research-meta">수동 음향학 | 데이터 품질</div>
+                    <p>
+                        오션 네트워크 캐나다(Ocean Networks Canada)는 캐나다의 삼면 연안 전체에 걸쳐 광범위한 수중 수청기(하이드로폰) 네트워크를 운영하고 있습니다.
+                        인간 활동으로 인한 해양 소음이 해양 포유류의 건강에 심각한 위협으로 떠오름에 따라, 저희는 음향 데이터를 활용해 고래의 활동을 추적하고, 이동 경로를 지도화하며, 해상 교통량을 모니터링합니다.
+                        제가 맡은 역할은 전 세계 연구자들이 이 데이터를 바로 연구에 사용할 수 있도록 검증, 보정 및 과학적 신뢰성을 확보하는 것입니다.
+                        저희 수청기로 포착한 소리는 <a href="https://soundcloud.com/oceannetworkscanada" target="_blank" rel="noopener noreferrer">여기</a>에서 들으실 수 있습니다.
+                    </p>
+                </div>
+                <div class="research-image">
+                    <img src="images/southern-residents.png" alt="남부 상주형 범고래" loading="lazy" decoding="async">
+                </div>
+            </section>
+            <hr class="separator">
+
+            <section class="research-item">
+                <div class="research-text">
+                    <h2>연안 모니터링 및 원주민 파트너십</h2>
+                    <div class="research-meta">지역사회 기반 모니터링</div>
+                    <p>
+                        오션 네트워크 캐나다의 '지역사회 어민(Community Fishers)' 프로그램은 캐나다 전역의 원주민 연안 지역사회와 단체들이 자신들의 영해 내 해양 환경을 모니터링할 수 있도록 지원합니다.
+                        저희는 해양 생태계의 변화와 영향을 더 잘 이해하기 위해 해양 환경(수온, 염분, 엽록소, 용존 산소)의 기초선을 수립하고 있습니다.
+                        해당 지역사회들은 브리티시컬럼비아, 뉴펀들랜드 앤 래브라도, 누나시아부트, 누나빅, 누나부트에 위치해 있습니다.
+                    </p>
+                </div>
+                <div class="research-image">
+                    <img src="images/labrador.png" alt="래브라도 연안 모니터링" loading="lazy" decoding="async">
+                </div>
+            </section>
+            <hr class="separator">
+
+            <section class="research-item">
+                <div class="research-text">
+                    <h2>알래스카만 수송 역학</h2>
+                    <div class="research-meta">라그랑주 모델링</div>
+                    <p>
+                        알래스카만은 엘니뇨 남방진동(ENSO) 및 해양 열파와 같은 대규모 기후 극값에 매우 취약한 중요한 어장을 형성하고 있습니다.
+                        제 연구는 이러한 주요 기후 동인들이 영양염이 풍부한 연안수가 영양염이 결핍된 분지 내부로 수송되는 과정을 어떻게 변화시키는지 조사합니다.
+                        저는 라그랑주 입자 추적 기법을 사용하여 대규모 해류와 중간규모 소용돌이를 가로지르는 연안수의 이동 경로를 시뮬레이션하고 분석합니다.
+                    </p>
+                </div>
+                <div class="research-image">
+                    <img src="images/goa-transport.png" alt="라그랑주 입자 추적" loading="lazy" decoding="async">
+                </div>
+            </section>
+            <hr class="separator">
+
+            <section class="research-item">
+                <div class="research-text">
+                    <h2>아중간규모 역학 및 생물물리학적 상호작용</h2>
+                    <div class="research-meta">해양학 관측 | 현장 조사</div>
+                    <p>
+                        아중간규모(Submesoscale) 역학은 1~10km 규모에서 일어나는 해양 운동을 말합니다.
+                        연구선 <em>샐리 라이드(Sally Ride)</em>호에 탑승하여 수행한 <a href="https://www.earthdata.nasa.gov/data/projects/s-mode" target="_blank" rel="noopener noreferrer">S-MODE</a> IOP2 2023 탐사로부터 얻은 고해상도 해양 물리 및 생물학 관측 자료를 활용하여,
+                        저는 아중간규모 특징 내의 생물물리학적 상호작용이 식물플랑크톤의 생물량 및 분포에 미치는 영향을 연구합니다.
+                        이 연구는 해양의 탄소 수송 및 순환을 평가하기 위한 광범위한 노력에 기여합니다.
+                    </p>
+                </div>
+                <div class="research-image">
+                    <img src="images/submesoscale.png" alt="식물플랑크톤 분포를 조절하는 아중간규모 역학" loading="lazy" decoding="async">
+                </div>
+            </section>
+            <hr class="separator">
+
+            <section class="research-item">
+                <div class="research-text">
+                    <h2>해양 열파 및 기후 극값</h2>
+                    <div class="research-meta">해양 및 대기 모델링</div>
+                    <p>
+                        해양 열파는 평소보다 높은 해수면 온도가 장기간 지속되는 현상입니다.
+                        저는 해양 및 대기 모델을 사용하여 대기-해양 열 플럭스가 북동태평양의 강수량 및 연안 수괴 재분포에 미치는 영향을 연구합니다.
+                        또한 이러한 기후 극값이 산호 백화 현상, 용존 산소 공급 감소, 생물 종 분포 변화를 포함한 해양 생태계 교란에 미치는 영향에도 깊은 관심을 가지고 있습니다.
+                    </p>
+                </div>
+                <div class="research-image">
+                    <img src="images/mhw.png" alt="해수면 온도 편차" loading="lazy" decoding="async">
+                </div>
+            </section>
+        </div>
     </main>
-
-    <script src="script.js"></script>
-
 </body>
 </html>

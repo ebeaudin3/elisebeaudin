@@ -1,37 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
+      data-title-en="About Me | Élise Beaudin"
+      data-title-fr="À propos | Élise Beaudin"
+      data-title-ko="소개 | Élise Beaudin">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me | Élise Beaudin</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&family=Noto+Sans+KR:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 <body>
-
-    <!-- La barre latérale par défaut se charge ici -->
     <nav class="sidebar" id="custom-sidebar"></nav>
 
-    <!-- Zone de contenu avec le fond gris clair -->
     <main class="content page-layout">
-        <div class="about-card">
-            
+        <div class="lang-block" lang="en">
             <h1 class="page-title">About Me</h1>
-            
-            <!-- Welcome message -->
             <div class="bio-text">
                 <p class="greeting">Bonjour/Hi!</p>
                 <p>My name is <strong>Élise Beaudin</strong>, I am a physical oceanographer, and a storyteller. I have a lot of sea-going experience, as well as data analysis skills of anything ocean and climate data related.</p>
                 <p>Throughout my life, I have lived and worked in several countries: Canada, Sweden, Germany, Italy, and the USA. I love programming, playing and composing music, filmmaking, and of course the ocean!</p>
-                
-                <p>Feel free to connect with me via <a href="https://www.linkedin.com/in/elise-beaudin/" target="_blank">LinkedIn</a>, or contact me via email at ebeaudin[@]oceannetworks.ca.</p>
-                
-                <hr class="separator">
-                
+                <p>Feel free to connect with me via <a href="https://www.linkedin.com/in/elise-beaudin/" target="_blank" rel="noopener noreferrer">LinkedIn</a>, or contact me via email at ebeaudin[@]oceannetworks.ca.</p>
             </div>
 
-            <!-- Education -->
-            <section class="resume-section">
+            <hr class="separator">
+
+            <section>
                 <h2>Education</h2>
                 <table class="clean-table">
                     <tr>
@@ -39,7 +34,7 @@
                         <td>
                             <strong>Ph.D. in Physical Oceanography</strong><br>
                             Brown University, Providence, Rhode Island, USA<br>
-                            <span class="subtext">Advisors: Manu Di Lorenzo & Mara Freilich</span>
+                            <span class="subtext">Advisors: Manu Di Lorenzo &amp; Mara Freilich</span>
                         </td>
                     </tr>
                     <tr>
@@ -47,7 +42,7 @@
                         <td>
                             <strong>M.Sc. in Meteorology and Physical Oceanography</strong><br>
                             GEOMAR, Kiel, Germany<br>
-                            <span class="subtext">Advisors: Nadia Pinardi & Arne Biastoch</span>
+                            <span class="subtext">Advisors: Nadia Pinardi &amp; Arne Biastoch</span>
                         </td>
                     </tr>
                     <tr>
@@ -63,11 +58,9 @@
 
             <hr class="separator">
 
-            <!-- Section Institutions -->
-            <section class="resume-section">
+            <section>
                 <h2>Institutions</h2>
-                <p class="section-intro">I spent the past years moving around for my studies, sometimes for internships, sometimes for an extended research project. Here is the list of the institutions I found myself working at:</p>
-                
+                <p>I spent the past years moving around for my studies, sometimes for internships, sometimes for an extended research project. Here is the list of the institutions I found myself working at:</p>
                 <table class="clean-table inline-rows">
                     <tr><td class="date-col">2025–present</td><td>Ocean Networks Canada, Victoria, British Columbia, Canada</td></tr>
                     <tr><td class="date-col">2022–2025</td><td>Brown University, Providence, Rhode Island, USA</td></tr>
@@ -81,32 +74,147 @@
                     <tr><td class="date-col">2013–2016</td><td>Université de Montréal, Montréal, Canada</td></tr>
                 </table>
             </section>
-
         </div>
 
-
-    <hr class="separator">
-
-    <section class="institutions-section">
-        <div class="logo-grid">
-            <img src="images/logos/onc.png" alt="Ocean Networks Canada">
-            <img src="images/logos/brownU.png" alt="Brown University">
-            <img src="images/logos/gatech.png" alt="Georgia Institute of Technology">
-            <img src="images/logos/ouranos.png" alt="Ouranos">
-            <img src="images/logos/UniBO.png" alt="Universita di Bologna">
-            <img src="images/logos/cmcc.png" alt="CMCC">
-            <img src="images/logos/geomar.png" alt="GEOMAR">
-            <img src="images/logos/lund.png" alt="Lund University">
-            <img src="images/logos/tropos.png" alt="TROPOS Leibniz Institute for Atmospheric Research">
-            <img src="images/logos/UdeM.png" alt="Université de Montréal">
-            <img src="images/logos/scripps.png" alt="Scripps Institution of Oceanography">
+        <div class="lang-block" lang="fr">
+            <h1 class="page-title">À propos de moi</h1>
+            <div class="bio-text">
+                <p class="greeting">Bonjour!</p>
+                <p>Je m'appelle <strong>Élise Beaudin</strong>, je suis une océanographe physicienne, ainsi qu'une conteuse. Mes compétences incluent l'analyse de données océanographiques et climatiques, la modélisation des courants marins, et expéditions scientifiques en mer.</p>
+                <p>J'ai vécu et travaillé dans plusieurs pays: le Canada, la Suède, l'Allemagne, l'Italie, et les États-Unis. J'adore la programmation, jouer et composer de la musique, la création de films, et bien sûr la mer!</p>
+                <p>Pour toutes questions ou collaborations, je vous invite à me contacter sur <a href="https://www.linkedin.com/in/elise-beaudin/" target="_blank" rel="noopener noreferrer">LinkedIn</a>, ou par courriel à ebeaudin[@]oceannetworks.ca.</p>
             </div>
-    </section>
-    
+
+            <hr class="separator">
+
+            <section>
+                <h2>Éducation</h2>
+                <table class="clean-table">
+                    <tr>
+                        <td class="date-col">2019–2025</td>
+                        <td>
+                            <strong>Ph.D. en océanographie physique</strong><br>
+                            Brown University, Providence, Rhode Island, USA<br>
+                            <span class="subtext">Directeur/trice: Manu Di Lorenzo &amp; Mara Freilich</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="date-col">2016–2019</td>
+                        <td>
+                            <strong>M.Sc. en météorologie et océanographie physique</strong><br>
+                            GEOMAR, Kiel, Allemagne<br>
+                            <span class="subtext">Directeur/trice: Nadia Pinardi &amp; Arne Biastoch</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="date-col">2013–2016</td>
+                        <td>
+                            <strong>B.Sc. en physique</strong><br>
+                            Université de Montréal, Montréal, Canada<br>
+                            <span class="subtext">Directeur: Paul Charbonneau</span>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <hr class="separator">
+
+            <section>
+                <h2>Institutions</h2>
+                <p>J'ai passé ces dernières années dans plusieurs institutions pour mes études, des stages de recherche, et le travail. Voici une liste des institutions que j'ai fréquentées:</p>
+                <table class="clean-table inline-rows">
+                    <tr><td class="date-col">2025–présent</td><td>Ocean Networks Canada, Victoria, British Columbia, Canada</td></tr>
+                    <tr><td class="date-col">2022–2025</td><td>Brown University, Providence, Rhode Island, USA</td></tr>
+                    <tr><td class="date-col">2021–2022</td><td>Scripps Oceanographic Institution, San Diego, California, USA</td></tr>
+                    <tr><td class="date-col">2019–2021</td><td>Georgia Institute of Technology, Atlanta, Georgia, USA</td></tr>
+                    <tr><td class="date-col">2017–2019</td><td>Universita' di Bologna/CMCC, Bologna, Italy</td></tr>
+                    <tr><td class="date-col">2016–2018</td><td>GEOMAR Helmholtz-Center for Ocean Research, Kiel, Germany</td></tr>
+                    <tr><td class="date-col">2015–2016</td><td>Lund University, Lund, Sweden</td></tr>
+                    <tr><td class="date-col">2015</td><td>TROPOS Leibniz Institute for Atmospheric Research, Leipzig, Germany</td></tr>
+                    <tr><td class="date-col">2014</td><td>Ouranos, Montréal, Canada</td></tr>
+                    <tr><td class="date-col">2013–2016</td><td>Université de Montréal, Montréal, Canada</td></tr>
+                </table>
+            </section>
+        </div>
+
+        <div class="lang-block" lang="ko">
+            <h1 class="page-title">소개</h1>
+            <div class="bio-text">
+                <p class="greeting">안녕하세요! (Bonjour/Hi!)</p>
+                <p>제 이름은 <strong>Élise Beaudin</strong>입니다. 저는 물리해양학자이자 스토리텔러입니다. 풍부한 해상 승선 조사(Fieldwork) 경험을 가지고 있으며, 해양 및 기후 데이터와 관련된 모든 종류의 데이터 분석 역량을 갖추고 있습니다.</p>
+                <p>지금까지 캐나다, 스웨덴, 독일, 이탈리아, 미국 등 세계 여러 나라에서 거주하며 연구해 왔습니다. 프로그래밍, 음악 연주 및 작곡, 영화 제작을 사랑하며, 물론 바다를 가장 사랑합니다!</p>
+                <p><a href="https://www.linkedin.com/in/elise-beaudin/" target="_blank" rel="noopener noreferrer">LinkedIn</a>을 통해 편하게 저와 네트워킹하시거나, ebeaudin[@]oceannetworks.ca로 이메일을 보내주세요.</p>
+            </div>
+
+            <hr class="separator">
+
+            <section>
+                <h2>학력</h2>
+                <table class="clean-table">
+                    <tr>
+                        <td class="date-col">2019–2025</td>
+                        <td>
+                            <strong>물리해양학 박사 (Ph.D.)</strong><br>
+                            브라운 대학교 (Brown University), 로드아일랜드주 프로비던스, 미국<br>
+                            <span class="subtext">지도교수: Manu Di Lorenzo &amp; Mara Freilich</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="date-col">2016–2019</td>
+                        <td>
+                            <strong>기상학 및 물리해양학 석사 (M.Sc.)</strong><br>
+                            게오마르 해양연구소 (GEOMAR), 킬, 독일<br>
+                            <span class="subtext">지도교수: Nadia Pinardi &amp; Arne Biastoch</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="date-col">2013–2016</td>
+                        <td>
+                            <strong>물리학 학사 (B.Sc.)</strong><br>
+                            몬트리올 대학교 (Université de Montréal), 몬트리올, 캐나다<br>
+                            <span class="subtext">지도교수: Paul Charbonneau</span>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <hr class="separator">
+
+            <section>
+                <h2>거쳐온 연구 기관</h2>
+                <p>지난 몇 년 동안 학업, 인턴십, 그리고 장기 연구 프로젝트를 수행하기 위해 세계 여러 곳을 거쳐왔습니다. 제가 연구원 및 학생으로 몸담았던 기관들은 다음과 같습니다:</p>
+                <table class="clean-table inline-rows">
+                    <tr><td class="date-col">2025–현재</td><td>오션 네트웍스 캐나다 (Ocean Networks Canada), 브리티시컬럼비아주 빅토리아, 캐나다</td></tr>
+                    <tr><td class="date-col">2022–2025</td><td>브라운 대학교 (Brown University), 로드아일랜드주 프로비던스, 미국</td></tr>
+                    <tr><td class="date-col">2021–2022</td><td>스크립스 해양연구소 (Scripps Institution of Oceanography), 캘리포니아주 샌디에이고, 미국</td></tr>
+                    <tr><td class="date-col">2019–2021</td><td>조지아 공과대학교 (Georgia Institute of Technology), 조지아주 애틀랜타, 미국</td></tr>
+                    <tr><td class="date-col">2017–2019</td><td>볼로냐 대학교 / 유로-지중해 기후변화 센터 (Universita' di Bologna / CMCC), 볼로냐, 이탈리아</td></tr>
+                    <tr><td class="date-col">2016–2018</td><td>게오마르 헬름홀츠 해양연구소 (GEOMAR Helmholtz-Center for Ocean Research), 킬, 독일</td></tr>
+                    <tr><td class="date-col">2015–2016</td><td>룬드 대학교 (Lund University), 룬드, 스웨덴</td></tr>
+                    <tr><td class="date-col">2015</td><td>라이프니츠 대기연구소 (TROPOS Leibniz Institute for Atmospheric Research), 라이프치히, 독일</td></tr>
+                    <tr><td class="date-col">2014</td><td>우라노스 기후컨소시엄 (Ouranos), 몬트리올, 캐나다</td></tr>
+                    <tr><td class="date-col">2013–2016</td><td>몬트리올 대학교 (Université de Montréal), 몬트리올, 캐나다</td></tr>
+                </table>
+            </section>
+        </div>
+
+        <hr class="separator">
+
+        <section class="institutions-section">
+            <div class="logo-grid">
+                <a class="logo-link" href="https://www.oceannetworks.ca" target="_blank" rel="noopener noreferrer" title="Ocean Networks Canada"><img src="images/logos/onc.png" alt="Ocean Networks Canada"></a>
+                <a class="logo-link" href="https://www.brown.edu" target="_blank" rel="noopener noreferrer" title="Brown University"><img src="images/logos/brownU.png" alt="Brown University"></a>
+                <a class="logo-link" href="https://www.gatech.edu" target="_blank" rel="noopener noreferrer" title="Georgia Institute of Technology"><img src="images/logos/gatech.png" alt="Georgia Institute of Technology"></a>
+                <a class="logo-link" href="https://www.ouranos.ca" target="_blank" rel="noopener noreferrer" title="Ouranos"><img src="images/logos/ouranos.png" alt="Ouranos"></a>
+                <a class="logo-link" href="https://www.unibo.it" target="_blank" rel="noopener noreferrer" title="Università di Bologna"><img src="images/logos/UniBO.png" alt="Università di Bologna"></a>
+                <a class="logo-link" href="https://www.cmcc.it" target="_blank" rel="noopener noreferrer" title="CMCC"><img src="images/logos/cmcc.png" alt="CMCC"></a>
+                <a class="logo-link" href="https://www.geomar.de" target="_blank" rel="noopener noreferrer" title="GEOMAR"><img src="images/logos/geomar.png" alt="GEOMAR"></a>
+                <a class="logo-link" href="https://www.lu.se" target="_blank" rel="noopener noreferrer" title="Lund University"><img src="images/logos/lund.png" alt="Lund University"></a>
+                <a class="logo-link" href="https://www.tropos.de" target="_blank" rel="noopener noreferrer" title="TROPOS"><img src="images/logos/tropos.png" alt="TROPOS Leibniz Institute for Atmospheric Research"></a>
+                <a class="logo-link" href="https://www.umontreal.ca" target="_blank" rel="noopener noreferrer" title="Université de Montréal"><img src="images/logos/UdeM.png" alt="Université de Montréal"></a>
+                <a class="logo-link" href="https://scripps.ucsd.edu" target="_blank" rel="noopener noreferrer" title="Scripps Institution of Oceanography"><img src="images/logos/scripps.png" alt="Scripps Institution of Oceanography"></a>
+            </div>
+        </section>
     </main>
-
-   
-    <script src="script.js"></script>
-
 </body>
 </html>

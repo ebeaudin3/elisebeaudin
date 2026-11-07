@@ -1,164 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
+      data-title-en="Side Quests | Élise Beaudin"
+      data-title-fr="Side Quests | Élise Beaudin"
+      data-title-ko="Side Quests | Élise Beaudin">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Side Quests | Élise Beaudin</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    
-    <style>
-        .page-subtitle {
-            color: #8b949e;
-            font-size: 1.1rem;
-            margin-bottom: 40px;
-            font-weight: 300;
-        }
-        .quest-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 30px;
-            margin-top: 20px;
-        }
-        /* Turning the card into a block link */
-        .quest-card {
-            background: #0d1117;
-            border: 1px solid #21262d;
-            border-radius: 12px;
-            overflow: hidden;
-            transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.3s ease;
-            display: block;
-            text-decoration: none; /* Removes default underline from links */
-        }
-        .quest-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
-            border-color: #30363d;
-        }
-        .card-thumbnail {
-            position: relative;
-            height: 220px;
-            background-size: cover;
-            background-position: center;
-            background-color: #161b22;
-        }
-        .category-badge {
-            position: absolute;
-            top: 15px;
-            left: 15px;
-            background: rgba(22, 27, 34, 0.85);
-            backdrop-filter: blur(4px);
-            color: #c9d1d9;
-            padding: 4px 12px;
-            font-size: 0.7rem;
-            font-weight: 600;
-            letter-spacing: 1.5px;
-            border-radius: 6px;
-            border: 1px solid #30363d;
-        }
-        .card-overlay {
-            position: absolute;
-            inset: 0;
-            background: rgba(10, 15, 30, 0.3);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-        .view-btn {
-            background: rgba(255, 255, 255, 0.95);
-            color: #0d1117;
-            padding: 10px 20px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-            transform: translateY(10px);
-            transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
-        }
-        .quest-card:hover .card-overlay {
-            opacity: 1;
-        }
-        .quest-card:hover .view-btn {
-            transform: translateY(0);
-        }
-        .card-info {
-            padding: 24px;
-        }
-        .card-info h3 {
-            margin: 0 0 8px 0;
-            font-family: 'Playfair Display', serif;
-            font-size: 1.4rem;
-            color: #f0f6fc;
-        }
-        .card-info p {
-            margin: 0;
-            font-size: 0.95rem;
-            color: #8b949e;
-            line-height: 1.6;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&family=Noto+Sans+KR:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 <body>
-
-    <!-- Renders your sidebar menu automatically -->
     <nav class="sidebar" id="custom-sidebar"></nav>
 
     <main class="content page-layout">
-        
-        <h1 class="page-title">Side Quests</h1>
-        <p class="page-subtitle">A collection of creative expeditions in filmmaking, sound, and story.</p>
-
-        <div class="quest-grid">
-            
-            <!-- CARD 1: DEEPS SHORTS -->
-            <a href="quest-documentaries.html" class="quest-card">
-                <div class="card-thumbnail" style="background-image: url('https://images.unsplash.com/photo-1492446845049-9c50cc313f00?auto=format&fit=crop&w=600&q=80');">
-                    <span class="category-badge">FILM</span>
-                    <div class="card-overlay">
-                        <div class="view-btn">Watch →</div>
+        <div class="lang-block" lang="en">
+            <h1 class="page-title">Side Quests</h1>
+            <p class="page-subtitle">A collection of creative expeditions in filmmaking, sound, and story.</p>
+            <div class="quest-grid">
+                <a href="quest-documentaries.html" class="quest-card">
+                    <div class="card-thumbnail">
+                        <img src="images/sidequests/deeps.png" alt="">
+                        <span class="category-badge">FILM</span>
+                        <div class="card-overlay"><div class="view-btn">Watch →</div></div>
                     </div>
-                </div>
-                <div class="card-info">
-                    <h3>DEEPS Shorts</h3>
-                    <p>A series of short films portaying Brown University earth and planetary scientists and their science.</p>
-                </div>
-            </a>
-
-            <!-- CARD 2: MUSIC -->
-            <a href="https://on.soundcloud.com/WKlvGBSExOlRH60hZV" class="quest-card">
-                <div class="card-thumbnail" style="background-image: url('images/logos/soundcloud.png');">
-                    <span class="category-badge">MUSIC</span>
-                    <div class="card-overlay">
-                        <div class="view-btn">Go to SoundCloud →</div>
+                    <div class="card-info">
+                        <h3>DEEPS Shorts</h3>
+                        <p>A series of short films portraying Brown University earth and planetary scientists and their science.</p>
                     </div>
-                </div>
-                <div class="card-info">
-                    <h3>Original Compositions</h3>
-                    <p>I compose music of different genres from bluegrass to latin western and rock.</p>
-                </div>
-            </a>
-
-            <!-- CARD 3: THE PEOPLE AND THE XIOZOMES -->
-            <a href="sidequests-xiozomes.html" class="quest-card">
-                <div class="card-thumbnail" style="background-image: url('https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=600&q=80');">
-                    <span class="category-badge">WRITING</span>
-                    <div class="card-overlay">
-                        <div class="view-btn">Read Story →</div>
+                </a>
+                <a href="https://on.soundcloud.com/WKlvGBSExOlRH60hZV" class="quest-card" target="_blank" rel="noopener noreferrer">
+                    <div class="card-thumbnail">
+                        <img src="images/sidequests/music.png" alt="">
+                        <span class="category-badge">MUSIC</span>
+                        <div class="card-overlay"><div class="view-btn">Go to SoundCloud →</div></div>
                     </div>
-                </div>
-                <div class="card-info">
-                    <h3>The People and the Xiozomes</h3>
-                    <p>A Lovecraft-esque short story about oceanographers encoutering a mysterious type of deep sea creature.</p>
-                </div>
-            </a>
+                    <div class="card-info">
+                        <h3>Original Compositions</h3>
+                        <p>I compose music of different genres from bluegrass to latin western and rock.</p>
+                    </div>
+                </a>
+                <a href="sidequests-xiozomes.html" class="quest-card">
+                    <div class="card-thumbnail">
+                        <img src="images/sidequests/writing.png" alt="">
+                        <span class="category-badge">WRITING</span>
+                        <div class="card-overlay"><div class="view-btn">Read Story →</div></div>
+                    </div>
+                    <div class="card-info">
+                        <h3>The People and the Xiozomes</h3>
+                        <p>A Lovecraft-esque short story about oceanographers encountering a mysterious type of deep sea creature.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
 
+        <div class="lang-block" lang="fr">
+            <h1 class="page-title">Side Quests</h1>
+            <p class="page-subtitle">Une collection d'expéditions créatives : cinéma, son et récit.</p>
+            <div class="quest-grid">
+                <a href="quest-documentaries.html" class="quest-card">
+                    <div class="card-thumbnail">
+                        <img src="images/sidequests/deeps.png" alt="">
+                        <span class="category-badge">FILM</span>
+                        <div class="card-overlay"><div class="view-btn">Regarder →</div></div>
+                    </div>
+                    <div class="card-info">
+                        <h3>DEEPS Shorts</h3>
+                        <p>Une série de courts métrages sur des scientifiques de la Terre et des planètes à l'Université Brown, et leur recherche.</p>
+                    </div>
+                </a>
+                <a href="https://on.soundcloud.com/WKlvGBSExOlRH60hZV" class="quest-card" target="_blank" rel="noopener noreferrer">
+                    <div class="card-thumbnail">
+                        <img src="images/sidequests/music.png" alt="">
+                        <span class="category-badge">MUSIQUE</span>
+                        <div class="card-overlay"><div class="view-btn">SoundCloud →</div></div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Compositions originales</h3>
+                        <p>Je compose dans plusieurs genres, du bluegrass au western latin et au rock.</p>
+                    </div>
+                </a>
+                <a href="sidequests-xiozomes.html" class="quest-card">
+                    <div class="card-thumbnail">
+                        <img src="images/sidequests/writing.png" alt="">
+                        <span class="category-badge">ÉCRITURE</span>
+                        <div class="card-overlay"><div class="view-btn">Lire →</div></div>
+                    </div>
+                    <div class="card-info">
+                        <h3>The People and the Xiozomes</h3>
+                        <p>Une nouvelle d'inspiration lovecraftienne&nbsp;: des océanographes rencontrent une créature mystérieuse des profondeurs.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="lang-block" lang="ko">
+            <h1 class="page-title">Side Quests</h1>
+            <p class="page-subtitle">영화, 소리, 이야기로 이어지는 창작 작업들.</p>
+            <div class="quest-grid">
+                <a href="quest-documentaries.html" class="quest-card">
+                    <div class="card-thumbnail">
+                        <img src="images/sidequests/deeps.png" alt="">
+                        <span class="category-badge">영화</span>
+                        <div class="card-overlay"><div class="view-btn">보기 →</div></div>
+                    </div>
+                    <div class="card-info">
+                        <h3>DEEPS Shorts</h3>
+                        <p>브라운 대학교의 지구·행성 과학자와 그들의 연구를 담은 단편 시리즈.</p>
+                    </div>
+                </a>
+                <a href="https://on.soundcloud.com/WKlvGBSExOlRH60hZV" class="quest-card" target="_blank" rel="noopener noreferrer">
+                    <div class="card-thumbnail">
+                        <img src="images/sidequests/music.png" alt="">
+                        <span class="category-badge">음악</span>
+                        <div class="card-overlay"><div class="view-btn">SoundCloud →</div></div>
+                    </div>
+                    <div class="card-info">
+                        <h3>오리지널 작곡</h3>
+                        <p>블루그래스부터 라틴 웨스턴, 록까지 여러 장르의 음악을 작곡합니다.</p>
+                    </div>
+                </a>
+                <a href="sidequests-xiozomes.html" class="quest-card">
+                    <div class="card-thumbnail">
+                        <img src="images/sidequests/writing.png" alt="">
+                        <span class="category-badge">글</span>
+                        <div class="card-overlay"><div class="view-btn">읽기 →</div></div>
+                    </div>
+                    <div class="card-info">
+                        <h3>The People and the Xiozomes</h3>
+                        <p>심해의 정체불명한 생명체를 만난 해양학자들의 러브크래프트풍 단편.</p>
+                    </div>
+                </a>
+            </div>
         </div>
     </main>
-
-    <!-- Connects to your master automation script for the sidebar layout -->
-    <script src="script.js"></script>
-
 </body>
 </html>
