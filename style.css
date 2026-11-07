@@ -73,6 +73,11 @@ body {
     padding-bottom: 4px;
     display: inline-block;
 }
+.nav-links a:link, 
+.nav-links a:visited, 
+.nav-links a:active {
+    color: #ffffff;
+}
 
 /* Underline effect on hover/active */
 .nav-links a::after {
