@@ -79,6 +79,11 @@ body {
     color: #ffffff;
 }
 
+a:link {
+    color: #ffffff; /* White text (matches the EN color in your image) */
+    text-decoration: underline;
+}
+
 /* Underline effect on hover/active */
 .nav-links a::after {
     content: '';
